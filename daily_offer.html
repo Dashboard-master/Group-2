@@ -7,7 +7,6 @@
 	</head>
 	<body>
 		<script src="./javascript/header.js" charset="utf-8"></script>
-		<script src="./javascript/daily_offer_carousel.js" charset="utf-8"></script>
 		<header></header>
 		<section class="daily_menu_container">
 			<button id="previous_offer_button" class="arrow_container">
@@ -17,6 +16,9 @@
 				<img src="./media/arrow-right.svg" alt="next offer button" class="arrows">
 			</button>
 			<section class="carousel_container">
+				<article class="offer hidden_offer_left" style="visibility: hidden;">
+					<!-- tom for å holde plasseringen til resten av elementene riktig  -->
+				</article>
 				<article class="offer preview_offer_left">
 					<h2>Tirsdag:</h2>
 					<img src="./media/test_image.jpg" alt="Image of todays offer">
@@ -38,8 +40,12 @@
 					<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
 					<p class="price">45,-</p>
 				</article>
+				<article class="offer hidden_offer_right" style="visibility: hidden;">
+					<!-- tom for å holde plasseringen til resten av elementene riktig  -->
+				</article>
 			</section>
 		</section>
+		<script src="./javascript/daily_offer_carousel.js" charset="utf-8"></script>
 		<script src="./javascript/footer.js" charset="utf-8"></script>
 	</body>
 </html>
