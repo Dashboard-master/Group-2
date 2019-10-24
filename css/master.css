@@ -65,6 +65,7 @@ body {
 	font-size: 16px;
 	box-shadow: 5px 5px 2.5px 0px rgba(60,60,60,0.5);
 	transition: transform 1s, margin 1s;
+	transition-timing-function: ease-in-out;
 }
 .current {
 	margin: auto;
