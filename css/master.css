@@ -54,6 +54,7 @@ body {
 	display: flex;
 	flex-direction: row;
 	overflow: hidden;
+	padding-bottom: 5px;
 }
 .offer{
 	width: 258px;
@@ -84,6 +85,17 @@ body {
 	margin: 0;
 	padding: 15px;
 }
+.preview_offer_left:hover  {
+	cursor: pointer;
+	transform: scale(0.73) perspective(8cm) rotateY(-25deg);
+	transition: all 0.5s;
+}
+.preview_offer_right:hover {
+	cursor: pointer;
+	transform: scale(0.73) perspective(8cm) rotateY(25deg);
+	transition: all 0.5s;
+}
+
 .hidden_offer_left {
 	transform: scale(0.2) perspective(7cm) rotateY(-90deg);
 	width: 0;

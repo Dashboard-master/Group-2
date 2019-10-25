@@ -52,10 +52,11 @@ function previous_offer(){
 	}
 }
 
-function clearListeners() {
-	for (let offer of offer_list) {
-		console.log(offer)
-		offer.removeEventListener('click', next_offer)
-		offer.removeEventListener('click', previous_offer)
+window.onkeydown = (e) => {
+	if (e.keyCode == 37){
+		previous_offer()
+	}
+	else if (e.keyCode == 39) {
+		next_offer()
 	}
 }
