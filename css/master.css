@@ -63,28 +63,36 @@ body {
 	padding: 15px;
 	position: relative;
 	font-size: 16px;
+	overflow: hidden;
 	box-shadow: 5px 5px 2.5px 0px rgba(60,60,60,0.5);
-	transition: transform 1s, margin 1s, padding 1s, border 1s;
+	transition: all 1s;
+	/*
+	transition: transform 1.5s, margin 1.5s, width 1.5s, perspective 1.5s, width 1.5s, border 1.5s, padding 1.5s;
+	*/
 	transition-timing-function: ease-in-out;
 }
 .current {
-	margin: auto;
+	margin: 0 54px;
 }
 .preview_offer_right {
 	transform: scale(0.7) perspective(9cm) rotateY(30deg);
+	margin: 0;
+	padding: 15px;
 }
 .preview_offer_left {
 	transform: scale(0.7) perspective(9cm) rotateY(-30deg);
+	margin: 0;
+	padding: 15px;
 }
 .hidden_offer_left {
-	transform: rotateY(-90deg) scaleY(0.5);
+	transform: scale(0.2) perspective(7cm) rotateY(-90deg);
 	width: 0;
 	overflow: hidden;
 	border: 0px solid black;
 	padding: 0;
 }
 .hidden_offer_right {
-	transform: rotateY(90deg) scaleY(0.5);
+	transform: scale(0.2) perspective(7cm) rotateY(90deg);
 	width: 0;
 	overflow: hidden;
 	border: 0px solid black;
@@ -98,6 +106,7 @@ body {
 	margin-top: 5px;
 	height: 100px;
 	width: 258px;
+	overflow: hidden;
 }
 .offer > img {
 	width: 258px;
