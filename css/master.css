@@ -60,6 +60,7 @@ body {
 	width: 258px;
 	height: 405px;
 	border: 7px solid #614035;
+	border-radius: 7px;
 	background-color: #FFFAF3;
 	padding: 15px;
 	position: relative;
@@ -74,16 +75,20 @@ body {
 }
 .current {
 	margin: 0 54px;
+	z-index: 1;
+	transform: perspective(9cm);
 }
 .preview_offer_right {
 	transform: scale(0.7) perspective(9cm) rotateY(30deg);
 	margin: 0;
 	padding: 15px;
+	z-index: 0;
 }
 .preview_offer_left {
 	transform: scale(0.7) perspective(9cm) rotateY(-30deg);
 	margin: 0;
 	padding: 15px;
+	z-index: 0;
 }
 .preview_offer_left:hover  {
 	cursor: pointer;
