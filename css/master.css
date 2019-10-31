@@ -1,32 +1,6 @@
 @import url("header.css");
 @import url("reviews.css");
 
-html {
-  overflow-y: scroll;
-}
-
-body {
-  margin: 0;
-  overflow: hidden;
-  background-image: url("../media/bg.jpg"),
-    linear-gradient(rgba(27, 17, 17, 0.7), rgba(27, 17, 17, 0.7));
-  background-blend-mode: overlay;
-  background-size: 100%;
-}
-
-h1,
-h2,
-h3 {
-  font-family: andale mono;
-  font-weight: bolder;
-  color: #614035;
-}
-
-label {
-  font-family: andale mono;
-  color: black;
-}
-
 /* koden under gjelder for bildekarusellen i daily_offer.html */
 .daily_menu_container {
   position: relative;

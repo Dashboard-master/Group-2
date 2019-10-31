@@ -42,6 +42,13 @@ document.getElementById("new_review").addEventListener(
     let user_name_input = document.getElementById("user_name").value;
     user_name.innerHTML = user_name_input;
 
+    let user_star_rating = document.createElement("DIV");
+
+    for (var i = 1; i <= 5; i++) {
+      let thisStar = "star" + [i];
+      let newStar = document.getElementById(thisStar);
+    }
+
     let textarea = document.createElement("TEXTAREA");
     textarea.cols = 40;
     textarea.rows = 5;
