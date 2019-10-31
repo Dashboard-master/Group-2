@@ -24,6 +24,11 @@ h3 {
   color: #614035;
 }
 
+p {
+  font-family: andale mono;
+  color: black;
+}
+
 label {
   font-family: andale mono;
   color: black;

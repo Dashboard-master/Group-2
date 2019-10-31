@@ -8,16 +8,29 @@
   <body>
     <script src="./javascript/header.js" charset="utf-8"></script>
 
-    <div id="user_reviews">
-      <h1>LATEST REVIEWS</h1>
+    <div id="all_reviews_container">
+      <div id="latest_reviews_container">
+        <h1>LATEST REVIEWS</h1>
+        <div class="overall_rating">
+          <p id="overall_rating_text">0 people have rated us</p>
+          <span id="star_o1">☆</span><span id="star_o2">☆</span
+          ><span id="star_o3">☆</span><span id="star_o4">☆</span
+          ><span id="star_o5">☆</span>
+        </div>
+      </div>
+      <div id="user_reviews"></div>
     </div>
 
     <div id="give_review_container">
       <h2>WANT TO LEAVE A REVIEW?</h2>
 
-      <textarea name="Text" cols="40" rows="5" id="user_text_review">
-Put text here...</textarea
-      >
+      <textarea
+        name="Text"
+        cols="40"
+        rows="5"
+        id="user_text_review"
+        placeholder="Please write your review here..."
+      ></textarea>
 
       <div id="user_names">
         <label for="Name">Name:&nbsp;&nbsp;</label>
@@ -43,7 +56,7 @@ Put text here...</textarea
       <input
         type="submit"
         name="send_review"
-        value="Send review"
+        value="SEND REVIEW"
         id="new_review"
       />
     </div>

@@ -45,27 +45,35 @@
 }
 
 .daily_offers_button {
-  margin: 0 -2em -1.8em 0;
+  margin: 0 0em -1.8em 0;
 }
 
 .home_button {
-  width: 400px;
-  height: 300px;
+  transition: all 0.2s;
+  width: 350px;
+  height: 230px;
   cursor: pointer;
-  filter: drop-shadow(3px 0px 2px rgba(51, 41, 39, 0.637));
+  filter: drop-shadow(10px 10px 10px rgba(51, 41, 39, 0.637));
+  margin: 20px 0px -40px 0px;
+}
+
+.home_button:hover {
+  width: 370px;
+  height: 250px;
 }
 
 .reviews_button {
-  margin: 0 0.3em -1.8em -2.5em;
+  margin: 0 0em -1.8em 0em;
 }
 
 .contact_us_button {
   padding-top: 0.3em;
-  margin: 0 0.3em -1.8em 0;
+  margin: 0 0.3em -1.8em 0.3em;
 }
 
 .menu_button:hover,
 .daily_offers_button:hover,
 .reviews_button:hover,
 .contact_us_button:hover {
+  background-color: rgba(167, 111, 92, 0.9);
 }

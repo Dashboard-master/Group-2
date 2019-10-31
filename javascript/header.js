@@ -18,8 +18,9 @@ daily_offers_button.innerText = "DAILY OFFERS";
 daily_offers_button.classList.add("daily_offers_button");
 
 home_button.classList.add("home_button");
-home_button.setAttribute("src", "media/thanksalatte_logo.png");
+home_button.setAttribute("src", "media/actual_logo.png");
 home_button.setAttribute("alt", "logo");
+home_button.classList.add("image");
 
 reviews_button.innerText = "REVIEWS";
 reviews_button.classList.add("reviews_button");

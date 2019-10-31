@@ -1,5 +1,11 @@
+#all_reviews_container {
+  display: inline-flex;
+  flex-direction: column;
+}
+
 #give_review_container,
-#user_reviews {
+#user_reviews,
+#latest_reviews_container {
   display: inline-flex;
   flex-direction: column;
   height: auto;
@@ -11,12 +17,50 @@
   margin-left: 5em;
 }
 
+.overall_rating {
+  margin-left: 19em;
+}
+
+#overall_rating_text {
+  margin-bottom: 0;
+}
+
+#latest_reviews_container {
+  flex-direction: row;
+  margin-bottom: 0;
+  width: 50em;
+}
+
 #give_review_container {
   width: 25em;
 }
 
 #user_reviews {
-  width: 50em;
+  height: 30em;
+  margin-top: 0;
+  width: 51.7em;
+  overflow: auto;
+  padding: 0;
+}
+
+#userReview {
+  background-color: rgba(255, 250, 243, 0.86);
+  border: 1px solid #614035;
+  margin-bottom: 8px;
+  padding: 4px;
+}
+
+#userReview > p {
+  margin: 0;
+}
+
+#text_input_user {
+  height: 5em;
+  width: 97%;
+  background-color: white;
+  overflow: auto;
+  border: 1px solid #614035;
+  padding: 4px;
 }
 
 textarea {
@@ -41,6 +85,30 @@ input[type="text"] {
 
 input[type="submit"] {
   margin-top: 20px;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  font-size: 17px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  background-color: rgb(148, 99, 83);
+  color: #3b2720;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 5px rgb(116, 78, 65);
+  font-family: alike angular;
+  font-weight: 900;
+  border: 1.5px solid #473729;
+}
+
+input[type="submit"]:hover {
+  background-color: rgb(167, 111, 92);
+}
+
+input[type="submit"]:active {
+  background-color: rgb(121, 81, 67);
+  box-shadow: 0 5px rgb(116, 78, 65);
+  transform: translateY(4px);
 }
 
 span {
@@ -66,4 +134,6 @@ span {
   content: "\2605";
   position: absolute;
   color: gold;
+  text-shadow: 0 0 4px rgb(211, 179, 0);
+  cursor: pointer;
 }
