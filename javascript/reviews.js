@@ -16,6 +16,8 @@ document.getElementById("star_rating").addEventListener(
   })
 );
 
+const checkRating = () => {};
+
 const removeRating = () => {
   for (var i = 1; i <= 5; i++) {
     let thisStar = "star" + [i];
@@ -37,6 +39,7 @@ document.getElementById("new_review").addEventListener(
   "click",
   (addReview = () => {
     let user_review_container = document.createElement("DIV");
+    user_review_container.style.border = " 1px solid black";
 
     let user_name = document.createElement("P");
     let user_name_input = document.getElementById("user_name").value;
@@ -49,8 +52,8 @@ document.getElementById("new_review").addEventListener(
       let newStar = document.getElementById(thisStar);
       let copy_of_star = document.createElement("SPAN");
       copy_of_star.appendChild(newStar.cloneNode(true));
-      alert(copy_of_star.innerHTML);
-
+      copy_of_star.id = "star_copy" + [i];
+      console.log(copy_of_star.id);
       user_star_rating.appendChild(copy_of_star);
     }
 
