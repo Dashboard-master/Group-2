@@ -1,6 +1,10 @@
+html,
 body {
 	margin: 0;
-	overflow: hidden;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	/* overflow: hidden; */
 }
 
 /* koden under gjelder for bildekarusellen i daily_offer.html */
@@ -11,13 +15,16 @@ body {
 	margin-top: 30px;
 	border: 0px
 }
+
 #next_offer_button {
 	right: -50px;
 }
+
 #previous_offer_button {
 	left: -50px;
 }
-.arrow_container{
+
+.arrow_container {
 	position: absolute;
 	top: 50%;
 	margin-top: -54px;
@@ -31,21 +38,26 @@ body {
 	background-color: #FFFAF3;
 	padding: 0;
 }
+
 .arrow_container:hover {
 	cursor: pointer;
 }
+
 .arrows {
 	display: block;
 	margin: auto;
 	width: 40px;
 	height: 40px;
 }
-#previous_offer_button > img {
+
+#previous_offer_button>img {
 	padding-left: 42px;
 }
-#next_offer_button > img {
+
+#next_offer_button>img {
 	padding-right: 42px;
 }
+
 .carousel_container {
 	max-width: 1024px;
 	height: auto;
@@ -56,7 +68,8 @@ body {
 	overflow: hidden;
 	padding-bottom: 5px;
 }
-.offer{
+
+.offer {
 	width: 258px;
 	height: 405px;
 	border: 7px solid #614035;
@@ -66,35 +79,40 @@ body {
 	position: relative;
 	font-size: 16px;
 	overflow: hidden;
-	box-shadow: 5px 5px 2.5px 0px rgba(60,60,60,0.5);
+	box-shadow: 5px 5px 2.5px 0px rgba(60, 60, 60, 0.5);
 	transition: all 1s;
 	/*
 	transition: transform 1.5s, margin 1.5s, width 1.5s, perspective 1.5s, width 1.5s, border 1.5s, padding 1.5s;
 	*/
 	transition-timing-function: ease-in-out;
 }
+
 .current {
 	margin: 0 54px;
 	z-index: 1;
 	transform: perspective(9cm);
 }
+
 .preview_offer_right {
 	transform: scale(0.7) perspective(9cm) rotateY(30deg);
 	margin: 0;
 	padding: 15px;
 	z-index: 0;
 }
+
 .preview_offer_left {
 	transform: scale(0.7) perspective(9cm) rotateY(-30deg);
 	margin: 0;
 	padding: 15px;
 	z-index: 0;
 }
-.preview_offer_left:hover  {
+
+.preview_offer_left:hover {
 	cursor: pointer;
 	transform: scale(0.73) perspective(8cm) rotateY(-25deg);
 	transition: all 0.5s;
 }
+
 .preview_offer_right:hover {
 	cursor: pointer;
 	transform: scale(0.73) perspective(8cm) rotateY(25deg);
@@ -108,6 +126,7 @@ body {
 	border: 0px solid black;
 	padding: 0;
 }
+
 .hidden_offer_right {
 	transform: scale(0.2) perspective(7cm) rotateY(90deg);
 	width: 0;
@@ -115,20 +134,25 @@ body {
 	border: 0px solid black;
 	padding: 0;
 }
-.offer > h2, .offer > h3 {
+
+.offer>h2,
+.offer>h3 {
 	margin-bottom: 5px;
 	margin-top: 10px;
 }
-.offer > p {
+
+.offer>p {
 	margin-top: 5px;
 	height: 100px;
 	width: 258px;
 	overflow: hidden;
 }
-.offer > img {
+
+.offer>img {
 	width: 258px;
 	max-height: 172px;
 }
+
 .price {
 	margin: 0;
 	width: 100%;
@@ -148,7 +172,103 @@ body {
 	bottom: 0;
 	width: 100%
 }
-/* Kode for homepage.html */
 
+
+
+/* Kode for homepage.html */
+#aboutUs {
+	float: left;
+
+	/* width: 500px;
+	height: 450px; */
+	width: 40%;
+	height: 80%;
+
+	margin-top: 20%;
+	/* margin-bottom: 10%; */
+
+	margin-left: 10%;
+	border-style: solid;
+	border-color: #614035;
+	border-width: 5px;
+	background-color: #FFFAF3;
+}
+
+#aboutInfo {
+	float: left;
+	width: 65%;
+	height: 100%;
+	font-family: Andale Mono, AndaleMono, monospace;
+	overflow: hidden;
+}
+
+h2 {
+	color: #614035;
+}
+
+#aboutImage {
+	float: right;
+	width: 35%;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+#openingHours {
+	float: right;
+
+	/* width: 100px;
+	height: 200px; */
+	width: 8%;
+	height: 30%;
+
+	margin-top: 10%;
+	margin-right: 10%;
+	border-style: solid;
+	border-color: #401616;
+	border-width: 1px;
+	background-color: #602121;
+}
+
+#openingTitle {
+	margin-left: auto;
+	margin-right: auto;
+	font-family: Andale Mono, AndaleMono, monospace;
+	color: #FFFFFF;
+	text-align: center;
+}
+
+#openingTitle>h3 {
+	padding: 3px;
+	margin: 0px;
+}
+
+#openingTimes {
+	float: left;
+	font-family: Andale Mono, AndaleMono, monospace;
+	font-size: small;
+	color: #FFFFFF;
+	padding: 2px;
+	margin: 0px;
+}
+
+#homepageDaily {
+	float: right;
+
+	/* width: 285px;
+	height: 320px; */
+	width: 30%;
+	height: 60%;
+
+	margin-top: 5%;
+	margin-bottom: 10%;
+	margin-right: 10%;
+	border-style: solid;
+	border-color: #614035;
+	border-width: 5px;
+	background-color: #FFFAF3;
+}
 
 /*Kode for noe annet under */
