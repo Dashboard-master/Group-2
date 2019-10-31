@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 html,
 body {
 	margin: 0;
@@ -158,16 +159,52 @@ body {
 	font-weight: bold;
 	font-size: 36px;
 	color: #404E31;
+=======
+@import url("header.css");
+@import url("reviews.css");
+@import url("daily_menu.css");
+
+/*Generell css*/
+html {
+  overflow-y: scroll;
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+  background-image: url("../media/bg.jpg"),
+    linear-gradient(rgba(27, 17, 17, 0.7), rgba(27, 17, 17, 0.7));
+  background-blend-mode: overlay;
+  background-size: 100%;
+}
+
+h1,
+h2,
+h3 {
+  font-family: andale mono;
+  font-weight: bolder;
+  color: #614035;
+}
+
+p {
+  font-family: andale mono;
+  color: black;
+}
+
+label {
+  font-family: andale mono;
+  color: black;
+>>>>>>> 1bfd0d442f0d5066c506955fc83a28a52f3f4991
 }
 
 /* Kode for footer og header under */
 .footer {
-	background-color: #404E31;
-	opacity: 0.9;
-	padding: 30px;
-	position: fixed;
-	bottom: 0;
-	width: 100%
+  background-color: #404e31;
+  opacity: 0.9;
+  padding: 30px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 

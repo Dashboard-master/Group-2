@@ -1,0 +1,79 @@
+.header {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  height: 20vh;
+  background-image: url("../media/header_bg.jpg");
+  border-bottom: 1px solid #614035;
+}
+
+.header_container {
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.menu_button,
+.daily_offers_button,
+.reviews_button,
+.contact_us_button {
+  display: inline-block;
+  width: 6em;
+  height: 3.5em;
+  border-radius: 100%;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: alike angular;
+  font-weight: 900;
+  font-size: 20px;
+  color: #3b2720;
+  border: 1.5px solid #473729;
+  background-color: rgba(148, 99, 83, 0.9);
+  text-align: center;
+  transition: all 0.2s;
+  align-self: flex-end;
+  cursor: pointer;
+  filter: drop-shadow(3px 0px 2px rgba(51, 41, 39, 0.637));
+}
+
+.menu_button {
+  margin: 0 0.3em -1.8em 0;
+}
+
+.daily_offers_button {
+  margin: 0 0em -1.8em 0;
+}
+
+.home_button {
+  transition: all 0.2s;
+  width: 350px;
+  height: 230px;
+  cursor: pointer;
+  filter: drop-shadow(10px 10px 10px rgba(51, 41, 39, 0.637));
+  margin: 20px 0px -40px 0px;
+}
+
+.home_button:hover {
+  width: 370px;
+  height: 250px;
+}
+
+.reviews_button {
+  margin: 0 0em -1.8em 0em;
+}
+
+.contact_us_button {
+  padding-top: 0.3em;
+  margin: 0 0.3em -1.8em 0.3em;
+}
+
+.menu_button:hover,
+.daily_offers_button:hover,
+.reviews_button:hover,
+.contact_us_button:hover {
+  background-color: rgba(167, 111, 92, 0.9);
+}
