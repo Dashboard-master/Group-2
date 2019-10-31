@@ -47,6 +47,11 @@ document.getElementById("new_review").addEventListener(
     for (var i = 1; i <= 5; i++) {
       let thisStar = "star" + [i];
       let newStar = document.getElementById(thisStar);
+      let copy_of_star = document.createElement("SPAN");
+      copy_of_star.appendChild(newStar.cloneNode(true));
+      alert(copy_of_star.innerHTML);
+
+      user_star_rating.appendChild(copy_of_star);
     }
 
     let textarea = document.createElement("TEXTAREA");
@@ -56,6 +61,7 @@ document.getElementById("new_review").addEventListener(
     textarea.innerHTML = textarea_input;
 
     user_review_container.appendChild(user_name);
+    user_review_container.appendChild(user_star_rating);
     user_review_container.appendChild(textarea);
     user_reviews.appendChild(user_review_container);
   })

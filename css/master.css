@@ -2,6 +2,33 @@
 @import url("reviews.css");
 @import url("daily_menu.css");
 
+/*Generell css*/
+html {
+  overflow-y: scroll;
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+  background-image: url("../media/bg.jpg"),
+    linear-gradient(rgba(27, 17, 17, 0.7), rgba(27, 17, 17, 0.7));
+  background-blend-mode: overlay;
+  background-size: 100%;
+}
+
+h1,
+h2,
+h3 {
+  font-family: andale mono;
+  font-weight: bolder;
+  color: #614035;
+}
+
+label {
+  font-family: andale mono;
+  color: black;
+}
+
 /* Kode for footer og header under */
 .footer {
   background-color: #404e31;
