@@ -1,17 +1,55 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-	<head>
-		<meta charset="utf-8">
-		<title></title>
-		<link rel="stylesheet" href="./css/master.css">
-	</head>
-	<body>
-		<script src="./javascript/header.js" charset="utf-8"></script>
-		<script src="./javascript/reviews.js" charset="utf-8"></script>
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="css/master.css" />
+  </head>
+  <body>
+    <script src="./javascript/header.js" charset="utf-8"></script>
 
+    <div id="user_reviews">
+      <h1>LATEST REVIEWS</h1>
+    </div>
 
+    <div id="give_review_container">
+      <h2>WANT TO LEAVE A REVIEW?</h2>
 
-		<!-- Viktig av footer.js er nederst i bodyen  -->
-		<script src="./javascript/footer.js" charset="utf-8"></script>
-	</body>
+      <textarea name="Text" cols="40" rows="5" id="user_text_review">
+Put text here...</textarea
+      >
+
+      <div id="user_names">
+        <label for="Name">Name:&nbsp;&nbsp;</label>
+        <input type="text" id="user_name" name="Name" />
+      </div>
+
+      <div id="input_email">
+        <label for="User email">Email:</label>
+        <input type="email" id="user_email" name="User email" />
+      </div>
+
+      <div id="star_rating" onmouseover="hoverStars()">
+        <label for="rating">Choose a rating:</label>
+        <div class="rating">
+          <span id="star5" onclick="getUserRating(5)">☆</span
+          ><span id="star4" onclick="getUserRating(4)">☆</span
+          ><span id="star3" onclick="getUserRating(3)">☆</span
+          ><span id="star2" onclick="getUserRating(2)">☆</span
+          ><span id="star1" onclick="getUserRating(1)">☆</span>
+        </div>
+      </div>
+
+      <input
+        type="submit"
+        name="send_review"
+        value="Send review"
+        id="new_review"
+      />
+    </div>
+
+    <!-- Viktig at footer.js er nederst i bodyen  -->
+    <script src="./javascript/reviews.js" charset="utf-8"></script>
+    <!--<script src="./javascript/footer.js" charset="utf-8"></script>-->
+  </body>
 </html>

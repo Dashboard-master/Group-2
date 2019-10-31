@@ -1,0 +1,69 @@
+#give_review_container,
+#user_reviews {
+  display: inline-flex;
+  flex-direction: column;
+  height: auto;
+  background-color: rgba(255, 250, 243, 0.85);
+  border: 4px solid #614035;
+  margin: 20px;
+  margin-top: 12em;
+  padding: 10px;
+  margin-left: 5em;
+}
+
+#give_review_container {
+  width: 25em;
+}
+
+#user_reviews {
+  width: 50em;
+}
+
+textarea {
+  margin-bottom: 10px;
+}
+
+#star_rating {
+  display: flex;
+  flex-direction: row;
+}
+
+input[type="email"] {
+  width: 80%;
+  float: right;
+  margin-bottom: 10px;
+}
+
+input[type="text"] {
+  width: 40%;
+  margin-bottom: 10px;
+}
+
+input[type="submit"] {
+  margin-top: 20px;
+}
+
+span {
+  margin-top: -12px;
+  font-size: 25px;
+}
+
+/*Changes the direction the stars are written in, so that they are coloured from left to right in gold when the user hovers them.*/
+.rating {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+}
+.rating > span {
+  display: inline-block;
+  position: relative;
+  width: 1.1em;
+}
+
+/*Once hovered over, the original star is replaced with a gold, filled star.*/
+.rating > span:hover:before,
+.rating > span:hover ~ span:before,
+.checked {
+  content: "\2605";
+  position: absolute;
+  color: gold;
+}
