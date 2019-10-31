@@ -179,10 +179,10 @@ body {
 #aboutUs {
 	float: left;
 
-	/* width: 500px;
-	height: 450px; */
-	width: 40%;
-	height: 80%;
+	width: 500px;
+	height: 450px;
+	/* width: 40%;
+	height: 80%; */
 
 	margin-top: 20%;
 	/* margin-bottom: 10%; */
@@ -196,22 +196,24 @@ body {
 
 #aboutInfo {
 	float: left;
-	width: 65%;
+	width: 56%;
 	height: 100%;
+	margin: 2px;
 	font-family: Andale Mono, AndaleMono, monospace;
 	overflow: hidden;
 }
 
-h2 {
+#aboutUs>h2 {
 	color: #614035;
 }
 
 #aboutImage {
 	float: right;
-	width: 35%;
+	width: 40%;
+	margin: 2px;
 }
 
-img {
+#aboutImage>img {
 	max-width: 100%;
 	max-height: 100%;
 }
@@ -219,10 +221,10 @@ img {
 #openingHours {
 	float: right;
 
-	/* width: 100px;
-	height: 200px; */
-	width: 8%;
-	height: 30%;
+	width: 100px;
+	height: 200px;
+	/* width: 8%;
+	height: 30%; */
 
 	margin-top: 10%;
 	margin-right: 10%;
@@ -257,10 +259,10 @@ img {
 #homepageDaily {
 	float: right;
 
-	/* width: 285px;
-	height: 320px; */
-	width: 30%;
-	height: 60%;
+	width: 300px;
+	height: 300px;
+	/* width: 30%;
+	height: 60%; */
 
 	margin-top: 5%;
 	margin-bottom: 10%;
@@ -269,6 +271,11 @@ img {
 	border-color: #614035;
 	border-width: 5px;
 	background-color: #FFFAF3;
+}
+
+#dailyMenu {
+	max-width: 100%;
+	max-height: 100%;
 }
 
 /*Kode for noe annet under */
