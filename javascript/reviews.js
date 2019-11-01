@@ -18,19 +18,19 @@ document.getElementById("star_rating").addEventListener(
 
 const removeRating = () => {
   for (var i = 1; i <= 5; i++) {
-    let thisStar = "star" + [i];
-    let changeStar = document.getElementById(thisStar);
-    changeStar.classList.remove("checked");
+    let getStar = "star" + [i];
+    let starToRemove = document.getElementById(getStar);
+    starToRemove.classList.remove("checked");
   }
 };
 
 const hoverStars = () => {
   for (var i = 1; i <= 5; i++) {
-    let thisStar = "star" + [i];
-    let changeStar = document.getElementById(thisStar);
-    changeStar.innerHTML = "☆";
-    changeStar.style.color = "black";
-    changeStar.style.textShadow = "none";
+    let chosenStar = "star" + [i];
+    let hoverStar = document.getElementById(chosenStar);
+    hoverStar.innerHTML = "☆";
+    hoverStar.style.color = "black";
+    hoverStar.style.textShadow = "none";
   }
 };
 
@@ -56,8 +56,8 @@ document.getElementById("new_review").addEventListener(
 
       let goldStar = 0;
       for (var i = 1; i <= 5; i++) {
-        let thisStar = "star" + [i];
-        let newStar = document.getElementById(thisStar).innerHTML;
+        let starToAdd = "star" + [i];
+        let newStar = document.getElementById(starToAdd).innerHTML;
         if (newStar == "\u2605") {
           goldStar++;
         }
@@ -74,11 +74,7 @@ document.getElementById("new_review").addEventListener(
         user_star_rating.appendChild(copy_of_star);
       }
 
-      //let rating_numbers = document.createElement("P");
-      //rating_numbers.id = "User_rating_number";
-      //rating_numbers.innerHTML = goldStar + "/5";
       rating_array.push(goldStar);
-      //console.log(rating_array);
 
       let textarea = document.createElement("DIV");
       textarea.id = "text_input_user";
@@ -89,7 +85,6 @@ document.getElementById("new_review").addEventListener(
 
       user_review_container.appendChild(user_name);
       user_review_container.appendChild(user_star_rating);
-      //user_review_container.appendChild(rating_numbers);
       user_review_container.appendChild(textarea);
       user_reviews.insertBefore(user_review_container, user_reviews.firstChild);
 
@@ -101,11 +96,11 @@ document.getElementById("new_review").addEventListener(
 
 const calculateRating = () => {
   for (var i = 1; i <= 5; i++) {
-    let thisStar = "star_o" + [i];
-    let changeStar = document.getElementById(thisStar);
-    changeStar.innerHTML = "☆";
-    changeStar.style.color = "black";
-    changeStar.style.textShadow = "none";
+    let toCalculateStar = "star_o" + [i];
+    let CalculateStar = document.getElementById(toCalculateStar);
+    CalculateStar.innerHTML = "☆";
+    CalculateStar.style.color = "black";
+    CalculateStar.style.textShadow = "none";
   }
 
   let sum = 0;
@@ -117,11 +112,11 @@ const calculateRating = () => {
   console.log(rating);
 
   for (var i = 1; i <= rating; i++) {
-    let thisStar = "star_o" + [i];
-    let changeStar = document.getElementById(thisStar);
-    changeStar.innerHTML = "\u2605";
-    changeStar.style.color = "gold";
-    changeStar.style.textShadow = "0 0 4px rgb(211, 179, 0)";
+    let checkRatingStar = "star_o" + [i];
+    let ratingStar = document.getElementById(checkRatingStar);
+    ratingStar.innerHTML = "\u2605";
+    ratingStar.style.color = "gold";
+    ratingStar.style.textShadow = "0 0 4px rgb(211, 179, 0)";
   }
 
   let rating_text = document.getElementById("overall_rating_text");
