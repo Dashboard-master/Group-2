@@ -1,0 +1,162 @@
+#all_reviews_container {
+  display: inline-flex;
+  flex-direction: column;
+  width: 50%;
+  margin-right: 10%;
+}
+
+#give_review_container,
+#user_reviews,
+#latest_reviews_container {
+  display: inline-flex;
+  flex-direction: column;
+  height: auto;
+  background-color: rgba(255, 250, 243, 0.85);
+  border: 4px solid #614035;
+  margin: 20px;
+  margin-top: 12em;
+  padding: 10px;
+  margin-left: 5em;
+}
+
+.overall_rating {
+  margin-left: 19em;
+}
+
+#overall_rating_text {
+  margin-bottom: 0;
+}
+
+#latest_reviews_container {
+  flex-direction: row;
+  margin-bottom: 0;
+  width: 100%;
+}
+
+#user_reviews {
+  height: 30em;
+  overflow: auto;
+  width: 100%;
+  margin-top: 0;
+}
+
+#give_review_container {
+  width: 25em;
+}
+
+#userReview {
+  background-color: rgba(255, 250, 243, 0.86);
+  border: 1px solid #614035;
+  margin-bottom: 8px;
+  padding: 4px;
+}
+
+#userReview > p {
+  margin: 0;
+}
+
+#text_input_user {
+  height: 5em;
+  width: 97%;
+  background-color: white;
+  overflow: auto;
+  border: 1px solid #614035;
+  padding: 4px;
+}
+
+textarea {
+  margin-bottom: 10px;
+}
+
+#star_rating {
+  display: flex;
+  flex-direction: row;
+}
+
+input[type="email"] {
+  width: 80%;
+  margin-bottom: 10px;
+}
+
+input[type="text"] {
+  width: 40%;
+  margin-bottom: 10px;
+}
+
+input[type="submit"] {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  font-size: 17px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  background-color: rgb(148, 99, 83);
+  color: #3b2720;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 5px rgb(116, 78, 65);
+  font-family: alike angular;
+  font-weight: 900;
+  border: 1.5px solid #473729;
+}
+
+input[type="submit"]:hover {
+  background-color: rgb(167, 111, 92);
+}
+
+input[type="submit"]:active {
+  background-color: rgb(121, 81, 67);
+  box-shadow: 0 5px rgb(116, 78, 65);
+  transform: translateY(4px);
+}
+
+span {
+  margin-top: -12px;
+  font-size: 25px;
+}
+
+/*Changes the direction the stars are written in, so that they are coloured from left to right in gold when the user hovers them.*/
+.rating {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+}
+.rating > span {
+  display: inline-block;
+  position: relative;
+  width: 1.1em;
+}
+
+/*Once hovered over, the original star is replaced with a gold, filled star.*/
+.rating > span:hover:before,
+.rating > span:hover ~ span:before,
+.checked {
+  content: "\2605";
+  position: absolute;
+  color: gold;
+  text-shadow: 0 0 4px rgb(211, 179, 0);
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1023px) {
+  #all_reviews_container {
+    height: auto;
+    width: 80%;
+  }
+
+  #latest_reviews_container,
+  #user_reviews {
+    display: inherit;
+    position: inherit;
+    height: auto;
+  }
+
+  #user_reviews {
+    height: 20em;
+  }
+
+  #give_review_container {
+    width: 80%;
+    margin-top: 0;
+  }
+}
