@@ -2,7 +2,8 @@
 	position: relative;
 	width: 100%;
 	max-height: max-content;
-	margin-top: 30px;
+	margin-top: 200px;
+	margin-bottom: 75px;
 	border: 0px
 }
 #next_offer_button {
@@ -49,6 +50,7 @@
 	flex-direction: row;
 	overflow: hidden;
 	padding-bottom: 5px;
+	justify-content: center;
 }
 .offer{
 	width: 258px;
@@ -128,4 +130,24 @@
 	font-weight: bold;
 	font-size: 36px;
 	color: #404E31;
+}
+@media only screen and (max-width: 1023px){
+	.preview_offer_left {
+		transform: scale(0.7) perspective(7cm) rotateY(-90deg);
+		width: 0;
+		overflow: hidden;
+		border: 0px solid black;
+		padding: 0;
+	}
+	.preview_offer_right{
+		transform: scale(0.7) perspective(7cm) rotateY(90deg);
+		width: 0;
+		overflow: hidden;
+		border: 0px solid black;
+		padding: 0;
+	}
+	.current {
+		z-index: 1;
+		transform: perspective(9cm);
+	}
 }
