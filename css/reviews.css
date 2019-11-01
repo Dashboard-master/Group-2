@@ -1,6 +1,8 @@
 #all_reviews_container {
   display: inline-flex;
   flex-direction: column;
+  width: 50%;
+  margin-right: 10%;
 }
 
 #give_review_container,
@@ -28,19 +30,18 @@
 #latest_reviews_container {
   flex-direction: row;
   margin-bottom: 0;
-  width: 50em;
-}
-
-#give_review_container {
-  width: 25em;
+  width: 100%;
 }
 
 #user_reviews {
   height: 30em;
-  margin-top: 0;
-  width: 51.7em;
   overflow: auto;
-  padding: 0;
+  width: 100%;
+  margin-top: 0;
+}
+
+#give_review_container {
+  width: 25em;
 }
 
 #userReview {
@@ -74,7 +75,6 @@ textarea {
 
 input[type="email"] {
   width: 80%;
-  float: right;
   margin-bottom: 10px;
 }
 
@@ -136,4 +136,27 @@ span {
   color: gold;
   text-shadow: 0 0 4px rgb(211, 179, 0);
   cursor: pointer;
+}
+
+@media only screen and (max-width: 1023px) {
+  #all_reviews_container {
+    height: auto;
+    width: 80%;
+  }
+
+  #latest_reviews_container,
+  #user_reviews {
+    display: inherit;
+    position: inherit;
+    height: auto;
+  }
+
+  #user_reviews {
+    height: 20em;
+  }
+
+  #give_review_container {
+    width: 80%;
+    margin-top: 0;
+  }
 }
