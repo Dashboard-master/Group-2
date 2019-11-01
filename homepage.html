@@ -5,6 +5,7 @@
 	<meta charset="utf-8">
 	<title>Thanks-A-Latte</title>
 	<link rel="stylesheet" href="./css/master.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -52,7 +53,16 @@
 	</section>
 
 	<section id="homepageDaily">
-		<img id="dailyMenu" src="media/Image-placeholder.jpg" alt="Placeholder">
+		<h2 id="todayText">Today:</h2>
+		<!-- <img id="dailyMenu" src="media/Image-placeholder.jpg" alt="Placeholder"> -->
+		<img id="dailyMenu" src="media/Image-placeholder.jpg" alt="Image of todays offer">
+		<h3>Lorem Ipsum</h3>
+		<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical
+			Latin literature from 45 BC, making it over 2000 years old.</p>
+		<p id="price">Price</p>
+		<button id="nextDay" onclick="window.location.href='daily_offer.html'" style="font-size:24px">Next day
+			<i class="fa fa-arrow-right"></i>
+		</button>
 	</section>
 
 	<script src="./javascript/homepage.js" charset="utf-8"></script>
