@@ -6,7 +6,7 @@
 .flexbox-container{
 	display: flex;
 	width: 1024px;
-	margin: auto;
+	margin: 100px auto;
 	height: auto;
 	flex-wrap: wrap;
 	justify-content: space-around;
@@ -78,7 +78,8 @@
 }
 
 #openinghours > h3, #openinghours > h3 ~ p {
-	margin: 0px;
+	margin: 0px 0px;
+	padding-bottom: 0px;
 	display: flex;
 	justify-content: center;
 }
@@ -97,7 +98,6 @@
 }
 
 .logo:hover{
-    opacity: 0.6;
 	transform: scale(1.2);
     border-radius: 70px;
 }
@@ -106,7 +106,9 @@
     padding: 15px;
 }
 
-h2 {
+#openinghours > h2 {
+	margin-top: 7px;
+	margin-bottom: 0px;
 	font-size: 30pt;
 	color: #614035;
 }
