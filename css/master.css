@@ -1,3 +1,5 @@
+@import "./contact_us.css";
+
 body {
 	margin: 0;
 }
@@ -71,12 +73,8 @@ body {
 	padding: 30px;
 	position: fixed;
 	bottom: 0;
-	width: 100%
+	width: 100%;
 }
 
 
 /*Kode for google maps i kontakt oss */
-#map {
-        height: 400px;
-        width: 100%;
-       }
