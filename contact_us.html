@@ -2,16 +2,56 @@
 <html lang="en" dir="ltr">
 	<head>
 		<meta charset="utf-8">
-		<title></title>
+		<title>Contact Us</title>
 		<link rel="stylesheet" href="./css/master.css">
 	</head>
 	<body>
-		<script src="./javascript/header.js" charset="utf-8"></script>
-		<script src="./javascript/map.js" charset="utf-8"></script>
+		<script src="./javascript/header.js"></script>
+		<section class="flexbox-container">
+			<article class="flexbox-1">
+				<p id="contactparagraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</article>
+			<article id="openinghours" class="flexbox-2">
+				<h2>OPENING HOURS</h2>
+				<h3>MON - FRI</h3>
+				<p>09:00 - 20:00</p>
+				<h3>SAT</h3>
+				<p>10:00-17:00</p>
+				<h3>SUN</h3>
+				<p>10:00-15:00</p>
+			</article>
+			<article  class="flexbox-3">
+				<div id="map">
 
-		<h1>hei</h1>
-
+				</div>
+			</article>
+			<article class="flexbox-4">
+				<a href="https://www.facebook.com" target="_blank">
+					<div class = "logo">
+						<img id="facebook" src="./media/facebook-256.png" alt="facebook" width="70" height="70">
+					</div>
+				</a>
+				<a href="https://www.instagram.com" target="_blank">
+					<div class="logo">
+						<img id="instagram" src="./media/instagram-256.png" alt="instagram" width="70" height="70">
+					</div>
+				</a>
+				<a href="https://www.twitter.com" target="_blank">
+					<div class ="logo">
+						<img id="twitter" src="./media/twitter-256.png" alt="twitter" width="70" height="70">
+					</div>
+				</a>
+				</article>
+			<article class="flexbox-3">
+				<img id="barista" src="./media/barista.jpg" alt="Barista">
+				<p>Founder of Thanks-A-Latte, Clark Kent</p>
+			</article>
+					</section>
+		<script src="./javascript/map.js"></script>
+		<script async defer
+    		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBrcce3-qR1g3np-dBq4ru-aLCFLeakSjk&callback=initMap">
+    	</script>
 		<!-- Viktig av footer.js er nederst i bodyen  -->
-		<script src="./javascript/footer.js" charset="utf-8"></script>
+		<script src="./javascript/footer.js"></script>
 	</body>
 </html>
