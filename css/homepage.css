@@ -1,18 +1,21 @@
-#aboutUs {
-    float: left;
+#homepageContainer {
+    margin: 100px 0;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: space-between;
+}
 
+#aboutUs {
+    display: flex;
+    margin-top: 105px;
+    margin-left: 100px;
     width: 500px;
     height: 450px;
-    /* width: 40%;
-      height: 80%; */
-
-    margin-top: 20%;
-    /* margin-bottom: 10%; */
-
-    margin-left: 10%;
-    border-style: solid;
-    border-color: #614035;
-    border-width: 5px;
+    display: block;
+    top: 0px;
+    position: relative;
+    border: 5px solid #614035;
     background-color: #FFFAF3;
 }
 
@@ -40,19 +43,21 @@
     max-height: 100%;
 }
 
-#openingHours {
-    float: right;
+#rightSide {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
+#openingHours {
+    margin-left: auto;
+    margin-top: 25px;
+    margin-right: 100px;
     width: 100px;
     height: 200px;
-    /* width: 8%;
-      height: 30%; */
-
-    margin-top: 10%;
-    margin-right: 10%;
     border-style: solid;
     border-color: #401616;
-    border-width: 1px;
+    border-width: 5px;
     background-color: #602121;
 }
 
@@ -60,8 +65,11 @@
     margin-left: auto;
     margin-right: auto;
     font-family: Andale Mono, AndaleMono, monospace;
-    color: #FFFFFF;
     text-align: center;
+}
+
+#openingTitle>h3 {
+    color: #FFFFFF;
 }
 
 #openingTitle>h3 {
@@ -73,22 +81,19 @@
     float: left;
     font-family: Andale Mono, AndaleMono, monospace;
     font-size: small;
-    color: #FFFFFF;
     padding: 2px;
     margin: 0px;
 }
 
+#openingTimes>p {
+    color: white;
+}
+
 #homepageDaily {
-    float: right;
-
+    margin-top: 10px;
+    margin-right: 100px;
     width: 400px;
-    height: auto;
-    /* width: 30%;
-      height: 60%; */
-
-    margin-top: 20px;
-    /* margin-bottom: 10%; */
-    margin-right: 10%;
+    height: 250px;
     border-style: solid;
     border-color: #614035;
     border-width: 5px;
@@ -96,7 +101,6 @@
     font-family: Andale Mono, AndaleMono, monospace;
     font-size: small;
     color: #602121;
-
     padding: 5px;
 }
 
