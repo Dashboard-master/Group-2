@@ -62,13 +62,3 @@ function dailyMenu() {
 }
 
 dailyMenu()
-
-
-
-// <article class="offer current">
-// 					<h2>Today:</h2>
-// 					<img src="./media/test_image.jpg" alt="Image of todays offer">
-// 					<h3>Lorem Ipsum</h3>
-// 					<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
-// 					<p class="price">45,-</p>
-// 				</article>
