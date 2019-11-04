@@ -1,0 +1,126 @@
+#homepageContainer {
+    margin: 100px 0;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: space-between;
+}
+
+#aboutUs {
+    display: flex;
+    margin-top: 105px;
+    margin-left: 100px;
+    width: 500px;
+    height: 450px;
+    display: block;
+    top: 0px;
+    position: relative;
+    border: 5px solid #614035;
+    background-color: #FFFAF3;
+}
+
+#aboutInfo {
+    float: left;
+    width: 56%;
+    height: 100%;
+    margin: 2px;
+    font-family: Andale Mono, AndaleMono, monospace, arial;
+    overflow: hidden;
+}
+
+#aboutUs>h2 {
+    color: #614035;
+}
+
+#aboutImage {
+    float: right;
+    width: 40%;
+    margin: 2px;
+}
+
+#aboutImage>img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#rightSide {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#openingHours {
+    margin-left: auto;
+    margin-top: 25px;
+    margin-right: 100px;
+    width: 100px;
+    height: 200px;
+    border-style: solid;
+    border-color: #401616;
+    border-width: 5px;
+    background-color: #602121;
+}
+
+#openingTitle {
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Andale Mono, AndaleMono, monospace, arial;
+    text-align: center;
+}
+
+#openingTitle>h3 {
+    padding: 3px;
+    margin: 0px;
+    color: #FFFFFF;
+}
+
+#openingTimes {
+    float: left;
+    font-family: Andale Mono, AndaleMono, monospace, arial;
+    font-size: small;
+    padding: 2px;
+    margin: 0px;
+}
+
+#openingTimes>p {
+    color: white;
+}
+
+#homepageDaily {
+    margin-top: 10px;
+    margin-right: 100px;
+    width: 400px;
+    height: 250px;
+    border-style: solid;
+    border-color: #614035;
+    border-width: 5px;
+    background-color: #FFFAF3;
+    font-family: Andale Mono, AndaleMono, monospace, arial;
+    font-size: small;
+    color: #602121;
+    padding: 5px;
+}
+
+#homepageDaily>img {
+    float: right;
+    max-width: 50%;
+    padding: 5px;
+}
+
+#homepageDaily>#price {
+    float: left;
+    font-size: 30px;
+    padding: 0px;
+    margin: 2px;
+    font-family: Andale Mono, AndaleMono, monospace, arial;
+    color: #404E31;
+}
+
+#homepageDaily>#nextDay {
+    float: right;
+}
+
+#dailyMenu {
+    max-width: 100%;
+    max-height: 100%;
+}

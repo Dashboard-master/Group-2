@@ -1,6 +1,7 @@
 @import url("header.css");
 @import url("reviews.css");
 @import url("daily_menu.css");
+@import url("homepage.css");
 @import url("contact_us.css");
 @import url("menu.css");
 
@@ -22,18 +23,18 @@ body {
 h1,
 h2,
 h3 {
-  font-family: andale mono;
+  font-family: Andale Mono, AndaleMono, monospace;
   font-weight: bolder;
   color: #614035;
 }
 
 p {
-  font-family: andale mono;
+  font-family: Andale Mono, AndaleMono, monospace;
   color: black;
 }
 
 label {
-  font-family: andale mono;
+  font-family: Andale Mono, AndaleMono, monospace;
   color: black;
 }
 
@@ -46,4 +47,9 @@ label {
   bottom: 0;
   width: 100%;
 }
+
+
+
+/* Kode for homepage.html */
+
 /*Kode for noe annet under */
