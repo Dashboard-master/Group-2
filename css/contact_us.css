@@ -1,0 +1,114 @@
+#map {
+	width: 400px;
+}
+
+/* Kode for kontakt oss */
+.flexbox-container{
+	display: flex;
+	width: 1024px;
+	margin: 100px auto;
+	height: auto;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	position: relative;
+}
+.flexbox-1 {
+	background-color: #FFFAF3;
+	font-family: Andale Mono, Arial;
+	font-size: 12pt;
+	width: 1024px;
+	padding: 0px 20px;
+	margin: 50px;
+	border: 7px solid #614035;
+	display: inline-flex;
+}
+
+
+.flexbox-2 {
+	border: solid #614035;
+	border-width: 7px;
+	width: 400px;
+	height: 300px;
+	display: inline-grid;
+	flex-wrap: wrap;
+	padding-top: 0px;
+	margin: 10px 10px 20px 10px;
+	background-color: #FFFAF3;
+	font-family: Andale Mono, Arial;
+	justify-content: center;
+}
+
+
+
+.flexbox-3 {
+	border: solid #614035;
+	border-width: 7px;
+	width: 400px;
+	height: 300px;
+	display: inline-flex;
+	flex-wrap: wrap;
+	margin: 10px 10px 20px 10px;
+	background-color: #FFFAF3;
+	font-family: Andale Mono, Arial;
+	font-size: 12pt;
+}
+
+
+.flexbox-4 {
+    width: 414px;
+	height: 300px;
+	display: inline-flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	margin: 10px 10px 20px 10px;
+}
+
+
+#barista {
+	width: 400px;
+	height: 250px;
+	background:#FFFAF3;
+}
+
+.flexbox-3 > p {
+	font-size: 20px;
+	margin: 5px 0px 5px 25px;
+	color: #614035;
+}
+
+#openinghours > h3, #openinghours > h3 ~ p {
+	margin: 0px 0px;
+	padding-bottom: 0px;
+	display: flex;
+	justify-content: center;
+}
+
+@media only screen and (max-width: 1023px) {
+	.flexbox-container {
+		width: 100%;
+	}
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: #614035;
+}
+
+.logo:hover{
+	transform: scale(1.2);
+    border-radius: 70px;
+}
+
+#twitter, #instagram, #facebook {
+    padding: 15px;
+}
+
+#openinghours > h2 {
+	margin-top: 7px;
+	margin-bottom: 0px;
+	font-size: 30pt;
+	color: #614035;
+}
