@@ -14,15 +14,20 @@
 }
 .flexbox-1 {
 	background-color: #FFFAF3;
-	font-family: Andale Mono, Arial;
+	font-family: "Andale Mono", Arial;
 	font-size: 12pt;
 	width: 1024px;
 	padding: 0px 20px;
 	margin: 50px;
 	border: 7px solid #614035;
 	display: inline-flex;
+	flex-direction: column;
 }
 
+.flexbox-1 > h2{
+	margin: 10px 0px 0px 400px;
+	align-items: center;
+}
 
 .flexbox-2 {
 	border: solid #614035;
@@ -34,7 +39,7 @@
 	padding-top: 0px;
 	margin: 10px 10px 20px 10px;
 	background-color: #FFFAF3;
-	font-family: Andale Mono, Arial;
+	font-family: "Andale Mono", Arial;
 	justify-content: center;
 }
 
@@ -49,7 +54,7 @@
 	flex-wrap: wrap;
 	margin: 10px 10px 20px 10px;
 	background-color: #FFFAF3;
-	font-family: Andale Mono, Arial;
+	font-family: "Andale Mono", Arial;
 	font-size: 12pt;
 }
 
@@ -72,8 +77,8 @@
 }
 
 .flexbox-3 > p {
-	font-size: 20px;
-	margin: 5px 0px 5px 25px;
+	font-size: 12pt;
+	margin: 5px 0px 7px 32px;
 	color: #614035;
 }
 
