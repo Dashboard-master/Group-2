@@ -20,7 +20,8 @@
 .menu_button,
 .daily_offers_button,
 .reviews_button,
-.contact_us_button {
+.contact_us_button,
+.home_button {
   display: inline-block;
   width: 6em;
   height: 3.5em;
@@ -49,12 +50,16 @@
 }
 
 .home_button {
-  transition: all 0.2s;
   width: 350px;
   height: 230px;
-  cursor: pointer;
+  margin-bottom: -15% !important;
   filter: drop-shadow(10px 10px 10px rgba(51, 41, 39, 0.637));
   margin: 20px 0px -40px 0px;
+  border-radius: unset;
+  box-sizing: border-box;
+  border: unset;
+  background-color: unset;
+  align-self: flex-end;
 }
 
 .home_button:hover {
