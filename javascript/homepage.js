@@ -8,11 +8,6 @@ function dailyMenu() {
     var todayText = "Today: "
     var price = "Price"
 
-	days = ({"src": "media/test_image.jpg", "text": "Today: Monday", "price": "45,-"})
-	todayText = days[day]["text"]
-	imageSrc = days[day]["src"]
-	price = days[day]["price"]
-
     if (day === 0) {
         imageSrc = "media/test_image.jpg"
         imageAlt = "Menu for sunday"
