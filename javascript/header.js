@@ -1,6 +1,7 @@
 let header = document.createElement("HEADER");
 header.classList.add("header");
 
+//Creates the different header elements and appends them to the header
 let header_wrapper = document.createElement("DIV");
 let header_container = document.createElement("DIV");
 let menu_button = document.createElement("BUTTON");
