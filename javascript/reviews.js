@@ -7,13 +7,14 @@ const previous_ratings = [];
 // for (var i = 1; i <= previous_ratings.length; i++) {
 //   addReview();
 // }
-//};
+//};scaxc
 
 //Function for getting the star rating of the user and applying the "checked" class to the amount of chosen stars out of five.
 document.getElementById("star_rating").addEventListener(
   "click",
   (getUserRating = chosen_stars => {
-    removeRating();
+
+    removeRating(chosen_stars);
 
     for (var i = 1; i <= chosen_stars; i++) {
       let thisStar = "star" + [i];
@@ -27,8 +28,8 @@ document.getElementById("star_rating").addEventListener(
 );
 
 //Removes the "checked" class from the previously chosen stars
-const removeRating = () => {
-  for (var i = 1; i <= 5; i++) {
+const removeRating = (n) => {
+  for (var i = 5; i >= n; i--) {
     let getStar = "star" + [i];
     let starToRemove = document.getElementById(getStar);
     starToRemove.classList.remove("checked");
@@ -45,6 +46,18 @@ const hoverStars = () => {
     hoverStar.style.textShadow = "none";
   }
 };
+
+//Draw stars after finished hoverStars
+const drawStars = () => {
+	number_of_stars = document.querySelectorAll(".checked").length
+	for (var i = 1; i <= number_of_stars; i++) {
+		let chosenStar = "star" + [i];
+	    let hoverStar = document.getElementById(chosenStar);
+		hoverStar.innerHTML = "\u2605";
+        hoverStar.style.color = "gold";
+        hoverStar.style.textShadow = "0 0 4px rgb(211, 179, 0)";
+	}
+}
 
 //Appends a new box with review details like star rating, review and name of user when they click on the "SEND REVIEW" button
 document.getElementById("new_review").addEventListener(

@@ -42,14 +42,14 @@
         <input type="email" id="user_email" name="User email" />
       </div>
 
-      <div id="star_rating" onmouseover="hoverStars()">
+      <div id="star_rating">
         <label for="rating">Choose a rating:</label>
-        <div class="rating">
-          <span id="star5" onclick="getUserRating(5)">☆</span
-          ><span id="star4" onclick="getUserRating(4)">☆</span
-          ><span id="star3" onclick="getUserRating(3)">☆</span
-          ><span id="star2" onclick="getUserRating(2)">☆</span
-          ><span id="star1" onclick="getUserRating(1)">☆</span>
+        <div class="rating" onmouseover="hoverStars()" onmouseout="drawStars()">
+          <span id="star5" onclick="getUserRating(5)">☆</span>
+		  <span id="star4" onclick="getUserRating(4)">☆</span>
+		  <span id="star3" onclick="getUserRating(3)">☆</span>
+		  <span id="star2" onclick="getUserRating(2)">☆</span>
+		  <span id="star1" onclick="getUserRating(1)">☆</span>
         </div>
       </div>
 
