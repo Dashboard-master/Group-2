@@ -86,12 +86,12 @@
 .preview_offer_left:hover  {
 	cursor: pointer;
 	transform: scale(0.73) perspective(8cm) rotateY(-25deg);
-	transition: all 0.5s;
+	transition: all 1s;
 }
 .preview_offer_right:hover {
 	cursor: pointer;
 	transform: scale(0.73) perspective(8cm) rotateY(25deg);
-	transition: all 0.5s;
+	transition: all 1s;
 }
 
 .hidden_offer_left {
