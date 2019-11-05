@@ -3,13 +3,14 @@
     display: flex;
     flex-wrap: wrap;
     position: relative;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 #aboutUs {
     display: flex;
     margin-top: 105px;
-    margin-left: 100px;
+    margin-left: 25px;
+    margin-right: 25px;
     width: 500px;
     height: 450px;
     display: block;
@@ -21,9 +22,10 @@
 
 #aboutInfo {
     float: left;
-    width: 56%;
+    width: 269px;
     height: 100%;
     margin: 2px;
+    padding: 10px;
     font-family: Andale Mono, AndaleMono, monospace, arial;
     overflow: hidden;
 }
@@ -34,7 +36,7 @@
 
 #aboutImage {
     float: right;
-    width: 40%;
+    width: 200px;
     margin: 2px;
 }
 
@@ -52,7 +54,7 @@
 #openingHours {
     margin-left: auto;
     margin-top: 25px;
-    margin-right: 100px;
+    margin-right: 25px;
     width: 100px;
     height: 200px;
     border-style: solid;
@@ -88,7 +90,8 @@
 
 #homepageDaily {
     margin-top: 10px;
-    margin-right: 100px;
+    margin-left: 25px;
+    margin-right: 25px;
     width: 400px;
     height: 250px;
     border-style: solid;
@@ -98,13 +101,12 @@
     font-family: Andale Mono, AndaleMono, monospace, arial;
     font-size: small;
     color: #602121;
-    padding: 5px;
+    padding: 10px;
 }
 
 #homepageDaily>img {
     float: right;
     max-width: 50%;
-    padding: 5px;
 }
 
 #homepageDaily>#price {
@@ -116,11 +118,32 @@
     color: #404E31;
 }
 
-#homepageDaily>#nextDay {
+#homepageDaily>#menuLink {
     float: right;
+    font-size: 24px;
+    font-family: Andale Mono, AndaleMono, monospace, arial;
+    margin: 5px;
+    color: #614035;
 }
 
 #dailyMenu {
     max-width: 100%;
     max-height: 100%;
+}
+
+@media (max-width: 1100px) {
+    #homepageContainer {
+        flex-direction: column;
+    }
+
+    #aboutUs {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #rightSide {
+        margin-left: auto;
+        margin-right: auto;
+        flex-direction: row;
+    }
 }

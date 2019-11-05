@@ -8,6 +8,11 @@ function dailyMenu() {
     var todayText = "Today: "
     var price = "Price"
 
+    days = ({
+        "todayText": "",
+    })
+
+
     if (day === 0) {
         console.log("sunday")
         imageSrc = "media/test_image.jpg"
