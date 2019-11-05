@@ -30,8 +30,7 @@
 }
 
 .flexbox-2 {
-	border: solid #614035;
-	border-width: 7px;
+	border: 7px solid #614035;
 	width: 400px;
 	height: 300px;
 	display: inline-grid;
@@ -46,8 +45,7 @@
 
 
 .flexbox-3 {
-	border: solid #614035;
-	border-width: 7px;
+	border: 7px solid #614035;
 	width: 400px;
 	height: 300px;
 	display: inline-flex;
@@ -56,6 +54,12 @@
 	background-color: #FFFAF3;
 	font-family: "Andale Mono", Arial;
 	font-size: 12pt;
+}
+
+.flexbox-3 > p {
+	font-size: 12pt;
+	margin: 5px 0px 7px 32px;
+	color: #614035;
 }
 
 
@@ -74,12 +78,6 @@
 	width: 400px;
 	height: 250px;
 	background:#FFFAF3;
-}
-
-.flexbox-3 > p {
-	font-size: 12pt;
-	margin: 5px 0px 7px 32px;
-	color: #614035;
 }
 
 #openinghours > h3, #openinghours > h3 ~ p {
