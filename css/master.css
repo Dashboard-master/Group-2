@@ -3,7 +3,7 @@
 @import url("daily_menu.css");
 @import url("homepage.css");
 @import url("contact_us.css");
-@import url("menu.css");
+@import url("menu.css");  
 
 /*Generell css*/
 html {
@@ -23,18 +23,19 @@ body {
 h1,
 h2,
 h3 {
-  font-family: Andale Mono, AndaleMono, monospace;
-  font-weight: bolder;
+  font-family: Andale Mono, monospace, arial;
   color: #614035;
+  text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
 }
 
 p {
-  font-family: Andale Mono, AndaleMono, monospace;
+  font-family: Andale Mono, monospace, arial;
   color: black;
+  font-size: 12px;
 }
 
 label {
-  font-family: Andale Mono, AndaleMono, monospace;
+  font-family: Andale Mono, monospace, arial;
   color: black;
 }
 

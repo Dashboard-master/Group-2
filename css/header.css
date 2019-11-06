@@ -32,7 +32,7 @@
   font-weight: 900;
   font-size: 20px;
   color: #3b2720;
-  border: 1.5px solid #473729;
+  border: 1.5px solid #4a3129;
   background-color: rgba(148, 99, 83, 0.9);
   text-align: center;
   transition: all 0.2s;
@@ -55,7 +55,13 @@
   height: 230px;
   cursor: pointer;
   filter: drop-shadow(10px 10px 10px rgba(51, 41, 39, 0.637));
-  margin: 20px 0px -40px 0px;
+  margin: 20px 0px -110px 0px;
+  display: inline-block;
+  border-radius: unset;
+  box-sizing: none;
+  border: none;
+  background-color: none;
+  align-self: flex-end;
 }
 
 .home_button:hover {
