@@ -1,5 +1,5 @@
 #all{
-    font-family: monospace;
+    font-family: Andale Mono, monospace, Arial;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -36,7 +36,7 @@
     text-align: left;
     display: inline-block;
     width: 9em;
-    font-size: 1em;
+    font-size: 0.8em;
 }
 
 .top_price,
@@ -69,7 +69,7 @@
 /* Styling for button og content som kommer etter det */
 
 .click_btn{
-    font-family: monospace;
+    font-family: Andale Mono, monospace, Arial;
     background-color: #FFFAF3;
     border: none;
     padding: 0px;
@@ -100,6 +100,10 @@
     color: black;
 }
 
+.text:not(:last-child){
+    margin-bottom: 7px;
+}
+
 .close {
     float: right;
     font-size: 3em;
@@ -115,4 +119,6 @@
   }
 
 
-@media 
+  @media (max-width: 700px) {
+
+  }
