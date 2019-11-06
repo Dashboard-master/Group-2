@@ -3,18 +3,18 @@
     display: flex;
     flex-wrap: wrap;
     position: relative;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 #aboutUs {
     display: flex;
-    margin-top: 105px;
-    margin-left: 25px;
-    margin-right: 25px;
-    width: 500px;
-    height: 450px;
+    margin-top: 100px;
+    margin-right: 10px;
+    margin-bottom: 50px;
+    width: 550px;
+    height: 490px;
+    padding: 5px;
     display: block;
-    top: 0px;
     position: relative;
     border: 5px solid #614035;
     background-color: #FFFAF3;
@@ -22,22 +22,25 @@
 
 #aboutInfo {
     float: left;
-    width: 269px;
-    height: 100%;
-    margin: 2px;
-    padding: 10px;
-    font-family: Andale Mono, AndaleMono, monospace, arial;
-    overflow: hidden;
 }
 
 #aboutUs>h2 {
     color: #614035;
 }
 
+#aboutInfo>p {
+    float: left;
+    width: 290px;
+    height: 100%;
+    margin: 5px;
+    font-size: 18px;
+    font-family: Andale Mono, AndaleMono, monospace, arial;
+    overflow: hidden;
+}
+
 #aboutImage {
     float: right;
-    width: 200px;
-    margin: 2px;
+    width: 220px;
 }
 
 #aboutImage>img {
@@ -45,21 +48,13 @@
     max-height: 100%;
 }
 
-#rightSide {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
 #openingHours {
-    margin-left: auto;
-    margin-top: 25px;
-    margin-right: 25px;
-    width: 100px;
-    height: 200px;
-    border-style: solid;
-    border-color: #401616;
-    border-width: 5px;
+    margin-left: 10px;
+    margin-top: 100px;
+    width: 300px;
+    height: 100px;
+    border: 5px solid #401616;
+    padding: 10px;
     background-color: #602121;
 }
 
@@ -71,16 +66,15 @@
 }
 
 #openingTitle>h3 {
-    padding: 3px;
     margin: 0px;
     color: #FFFFFF;
 }
 
 #openingTimes {
-    float: left;
     font-family: Andale Mono, AndaleMono, monospace, arial;
-    font-size: small;
-    padding: 2px;
+    font-size: 15px;
+    padding: 10px;
+    text-align: center;
     margin: 0px;
 }
 
@@ -89,41 +83,67 @@
 }
 
 #homepageDaily {
-    margin-top: 10px;
-    margin-left: 25px;
-    margin-right: 25px;
-    width: 400px;
-    height: 250px;
-    border-style: solid;
-    border-color: #614035;
-    border-width: 5px;
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 320px;
+    height: 350px;
+    border: 5px solid #614035;
     background-color: #FFFAF3;
+
+}
+
+#homepageDaily>h1 {
+    line-height: 1em;
+    margin: 10px;
+}
+
+#homepageDaily>h2 {
+    font-family: Andale Mono, AndaleMono, monospace, arial;
+    color: #602121;
+    padding: 0px;
+    margin: 0px;
+    line-height: 1em;
+}
+
+#homepageDaily>p {
+    width: 150px;
     font-family: Andale Mono, AndaleMono, monospace, arial;
     font-size: small;
     color: #602121;
     padding: 10px;
+    margin: 0px;
+}
+
+#todayHeader {
+    font-size: 50px;
+    margin: 0px;
+    padding: 5px;
+    text-align: center;
 }
 
 #homepageDaily>img {
     float: right;
     max-width: 50%;
+    padding: 5px;
+    margin-top: 10px;
 }
 
 #homepageDaily>#price {
     float: left;
-    font-size: 30px;
-    padding: 0px;
-    margin: 2px;
+    font-size: 35px;
+    padding-left: 15px;
+    padding-top: 20px;
     font-family: Andale Mono, AndaleMono, monospace, arial;
     color: #404E31;
 }
 
 #homepageDaily>#menuLink {
     float: right;
-    font-size: 24px;
-    font-family: Andale Mono, AndaleMono, monospace, arial;
-    margin: 5px;
-    color: #614035;
+}
+
+#homepageDaily>#menuLink>img {
+    max-height: 65px;
+    margin: 10px;
 }
 
 #dailyMenu {
@@ -139,6 +159,7 @@
     #aboutUs {
         margin-left: auto;
         margin-right: auto;
+        margin-bottom: 0px;
     }
 
     #rightSide {

@@ -3,60 +3,47 @@ function dailyMenu() {
     var day = todaysDate.getDay();
     console.log(day);
 
-    var imageSrc = "media/Image-placeholder.jpg"
-    var imageAlt = "Placeholder"
-    var todayText = "Today: "
-    var price = "Price"
+    days = [{
+        todayText: "Sunday",
+        price: "45,-",
+        imagesrc: "media/test_image.jpg",
+        imageAlt: "Menu for Sunday"
+    }, {
+        todayText: "Monday",
+        price: "35,-",
+        imagesrc: "media/test_image_2.jpg",
+        imageAlt: "Menu for Monday"
+    }, {
+        todayText: "Tuesday",
+        price: "39,-",
+        imagesrc: "media/test_image_3.jpg",
+        imageAlt: "Menu for Tuesday"
+    }, {
+        todayText: "Wednesday",
+        price: "45,-",
+        imagesrc: "media/test_image.jpg",
+        imageAlt: "Menu for Wednesday"
+    }, {
+        todayText: "Thursday",
+        price: "39,-",
+        imagesrc: "media/test_image_3.jpg",
+        imageAlt: "Menu for Thursday"
+    }, {
+        todayText: "Friday",
+        price: "45,-",
+        imagesrc: "media/test_image.jpg",
+        imageAlt: "Menu for Friday"
+    }, {
+        todayText: "Saturday",
+        price: "35,-",
+        imagesrc: "media/test_image_2.jpg",
+        imageAlt: "Menu for Saturday"
+    }]
 
-    days = ({
-        "todayText": "",
-    })
-
-
-    if (day === 0) {
-        imageSrc = "media/test_image.jpg"
-        imageAlt = "Menu for sunday"
-        todayText = "Today: Sunday"
-        price = "45,-"
-    } else if (day === 1) {
-        imageSrc = "media/test_image_2.jpg"
-        imageAlt = "Menu for monday"
-        todayText = "Today: Monday"
-        price = "35,-"
-    } else if (day === 2) {
-        imageSrc = "media/test_image_3.jpg"
-        imageAlt = "Menu for tuesday"
-        todayText = "Today: Tuesday"
-        price = "39,-"
-    } else if (day === 3) {
-        imageSrc = "media/test_image.jpg"
-        imageAlt = "Menu for wednesday"
-        todayText = "Today: Wednesday"
-        price = "45,-"
-    } else if (day === 4) {
-        imageSrc = "media/test_image_3.jpg"
-        imageAlt = "Menu for thursday"
-        todayText = "Today: Thursday"
-        price = "39,-"
-    } else if (day === 5) {
-        imageSrc = "media/test_image.jpg"
-        imageAlt = "Menu for friday"
-        todayText = "Today: Friday"
-        price = "45,-"
-    } else if (day === 6) {
-        imageSrc = "media/test_image_2.jpg"
-        imageAlt = "Menu for saturday"
-        todayText = "Today: Saturday"
-        price = "35,-"
-    } else {
-        console.log("Error finding day")
-    }
-
-    document.getElementById("dailyMenu").src = imageSrc
-    document.getElementById("dailyMenu").alt = imageAlt
-    document.getElementById("todayText").textContent = todayText
-    document.getElementById("price").textContent = price
-
+    // document.getElementById("dailyMenu").src = days[day].imageSrc
+    document.getElementById("dailyMenu").alt = days[day].imageAlt
+    document.getElementById("todayText").textContent = days[day].todayText
+    document.getElementById("price").textContent = days[day].price
 }
 
 dailyMenu()
