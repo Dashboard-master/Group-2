@@ -1,13 +1,12 @@
 const next_button = document.getElementById('next_offer_button')
 const previous_button = document.getElementById('previous_offer_button')
+
 function update_image_buttons (){
 	let next_image = document.querySelector(".preview_offer_right")
 	let previous_image = document.querySelector(".preview_offer_left")
 	next_image.addEventListener("click", next_offer)
 	previous_image.addEventListener("click", previous_offer)
 }
-update_image_buttons()
-
 
 next_button.addEventListener("click", next_offer)
 previous_button.addEventListener("click", previous_offer)
@@ -50,6 +49,13 @@ function previous_offer(){
 		current_index--
 		update_image_buttons()
 	}
+}
+
+window.onload = () => {
+	offer_list[current_index - 1].classList = "offer preview_offer_left"
+	offer_list[current_index + 1].classList = "offer preview_offer_right"
+	console.log("kjørt");
+	update_image_buttons()
 }
 
 window.onkeydown = (e) => {

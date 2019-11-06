@@ -3,7 +3,7 @@
 @import url("daily_menu.css");
 @import url("homepage.css");
 @import url("contact_us.css");
-@import url("menu.css");  
+@import url("menu.css");
 
 /*Generell css*/
 html {
@@ -31,7 +31,7 @@ h3 {
 p {
   font-family: Andale Mono, monospace, arial;
   color: black;
-  font-size: 12px;
+  font-size: 12pt;
 }
 
 label {

@@ -66,7 +66,7 @@
 	transition-timing-function: ease-in-out;
 }
 .current {
-	margin: 0 65px;
+	margin: 0 58px;
 	z-index: 1;
 	transform: perspective(9cm);
 }
