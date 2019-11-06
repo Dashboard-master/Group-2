@@ -1,5 +1,5 @@
 #homepageContainer {
-    margin: 100px 0;
+    margin: 100px;
     display: flex;
     flex-wrap: wrap;
     position: relative;
@@ -142,7 +142,7 @@
 }
 
 #homepageDaily>#menuLink>img {
-    max-height: 65px;
+    max-height: 60px;
     margin: 10px;
 }
 
