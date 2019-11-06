@@ -3,50 +3,47 @@
 	<head>
         <title>MENU.project</title>
         <meta charset="utf-8">
-        　<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="css/menu.css" type="text/css" media="screen"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="css/master.css" type="text/css" media="screen"> 
 	</head>
-    <body id="all">
-            <article class="boxes">
+    <body>
+        <script src="./javascript/header.js"></script>
+            <article id="all">
                 <div class="box">
                     <h1 class="headline">COLD BREW</h1>
-                        <ul class="list" id="top_list">
-    
-                                <li><button id="frappuccino" class="click_btn" >Frappuccino</button></li>
-    
-                                <div class="popup frappuccino">
-    
-                                  <div class="content">
-                                    <span class="close">&times;</span>
-                                    <h1 class="click-h1">Do you like frappuccino?</h1>
-                                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In at fringilla ligula,
-                                        in sodales sapien.
-                                        Proin porttitor libero sit amet leo ullamcorper ullamcorper.
-                                        <img id="content-pic" src="media/coffee.jpg" width = 200px height=200px>
-                                         </p>
-    
-                                    </div>
-                                    </div>
-    
-    
-                                <li><button id="bubbleTea" class="click_btn">Bubble Tea</button></li>
-    
-                                <div class="popup bubbleTea">
-    
-                                        <div class="content">
-                                          <span class="close">&times;</span>
-                                          <p>Frappuccino is delicious</p>
-                                        </div>
-                                        </div>
-    
+                    <ul class="list">
+                     <li><button id="frappuccino" class="click_btn" >Frappuccino</button></li>
+
+       
+
+                         <div class="popup frappuccino" id="closeBox">
+
+                            <div class="content">
+                                 <span class="close">&times;</span>
+                                   <h1 class="click-h1">Frappuccino</h1>
+                                   <p class="text">Frappuccino is a really tasty drink. 
+                                    It is extra good when your coding of the website isn't working and you want something comforting to drink.
+
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                                   <img id="content-pic" src="media/coffee.jpg">
+                                   <p class="popup_price">Pris: 60kr</p>
+                                   </p>
+                            </div>
+                         </div>
+                    <li><button id="bubbleTea" class="click_btn">Bubble Tea</button></li>
+                          <div class="popup bubbleTea">
+                            <div class="content">
+                                        <span class="close">&times;</span>
+                                        <p>Frappuccino is delicious</p>
+                            </div>
+                          </div>
                                 <li><button id="smoothies" class="click_btn">Smoothie</button></li>
                                 <div class="popup smoothies">
-    
-                                        <div class="content">
-                                          <span class="close">&times;</span>
-                                          <p>i want a smoothie</p>
-                                        </div>
-                                        </div>
+                                    <div class="content">
+                                        <span class="close">&times;</span>
+                                        <p>i want a smoothie</p>
+                                    </div>
+                                </div>
                                 <li><button id="iced_americano" class="click_btn"> Iced Americano</button></li>
                                 <div class="popup iced_americano">
     
@@ -73,7 +70,7 @@
                                         </div>
                                         </div>
                         </ul>
-                        <ul class="price_list">
+                        <ul class="list">
                                 <li class="top_price">60 kr</li>
                                 <li class="top_price">39 kr</li>
                                 <li class="top_price">40 kr</li>
@@ -144,7 +141,7 @@
     
                                       </div>
                         </ul>
-                        <ul class="price_list">
+                        <ul class="list">
                                 <li class="low_price">59 kr</li>
                                 <li class="low_price">49 kr</li>
                                 <li class="low_price">45 kr</li>
@@ -181,8 +178,8 @@
             
                                               </div>
     
-                                        <li><button id="mozarella-pizza" class="click_btn">Mozarrella Pizza</button></li>
-                                        <div class="popup mozarella-pizza">
+                                        <li><button id="panini" class="click_btn">Panini</button></li>
+                                        <div class="popup panini">
     
                                                 <div class="content">
                                                   <span class="close">&times;</span>
@@ -218,7 +215,7 @@
             
                                               </div>
                                 </ul>
-                                <ul class="price_list">
+                                <ul class="list">
                                         <li class="top_price">60 kr</li>
                                         <li class="top_price">39 kr</li>
                                         <li class="top_price">40 kr</li>
@@ -274,9 +271,9 @@
                                                 </div>
             
                                               </div>
-                                        <li><button id="oreokake"class="click_btn">Oreokake</button></li>
+                                        
+                                              <li><button id="oreokake"class="click_btn">Oreokake</button></li>
                                         <div class="popup oreokake">
-    
                                                 <div class="content">
                                                   <span class="close">&times;</span>
                                                   <p>Frappuccino is delicious</p>
@@ -284,16 +281,16 @@
             
                                               </div>
                                         <li><button id="valnøttkake"class="click_btn">Valnøtttkake</button></li>
-                                        <div class="popup valnøttkake">
+                                            <div class="popup valnøttkake">
     
                                                 <div class="content">
                                                   <span class="close">&times;</span>
                                                   <p>Frappuccino is delicious</p>
                                                 </div>
             
-                                              </div>
+                                            </div>
                                 </ul>
-                                <ul class="price_list">
+                                <ul class="list">
                                         <li class="low_price">59 kr</li>
                                         <li class="low_price">49 kr</li>
                                         <li class="low_price">45 kr</li>
