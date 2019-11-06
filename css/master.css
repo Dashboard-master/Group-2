@@ -17,27 +17,29 @@ body {
   linear-gradient(rgba(27, 17, 17, 0.7), rgba(27, 17, 17, 0.7));
   background-blend-mode: overlay;
   background-size: 100%;
+  background-attachment: fixed;
 }
 
 h1,
 h2,
 h3 {
-  font-family: Andale Mono, AndaleMono, monospace;
-  font-weight: bolder;
+  font-family: Andale Mono, monospace, arial;
   color: #614035;
+  text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
 }
 
 p {
-  font-family: Andale Mono, AndaleMono, monospace;
+  font-family: Andale Mono, monospace, arial;
   color: black;
+  font-size: 12px;
 }
 
 label {
-  font-family: Andale Mono, AndaleMono, monospace;
+  font-family: Andale Mono, monospace, arial;
   color: black;
 }
 
-/* Kode for footer og header under */
+/* Kode for footer under */
 .footer {
   background-color: #404e31;
   opacity: 0.9;
