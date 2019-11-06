@@ -1,170 +1,197 @@
 #homepageContainer {
-    margin: 100px 0;
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
-    justify-content: center;
+  margin: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  justify-content: center;
 }
 
 #aboutUs {
-    display: flex;
-    margin-top: 100px;
-    margin-right: 10px;
-    margin-bottom: 50px;
-    width: 550px;
-    height: 490px;
-    padding: 5px;
-    display: block;
-    position: relative;
-    border: 5px solid #614035;
-    background-color: #FFFAF3;
+  display: flex;
+  margin-top: 100px;
+  margin-right: 10px;
+  margin-bottom: 50px;
+  width: 550px;
+  height: 490px;
+  padding: 5px;
+  display: block;
+  position: relative;
+  border: 5px solid #614035;
+  background-color: #fffaf3;
 }
 
 #aboutInfo {
-    float: left;
+  float: left;
 }
 
-#aboutUs>h2 {
-    color: #614035;
+#aboutUs > h2 {
+  color: #614035;
 }
 
-#aboutInfo>p {
-    float: left;
-    width: 290px;
-    height: 100%;
-    margin: 5px;
-    font-size: 18px;
-    font-family: Andale Mono, AndaleMono, monospace, arial;
-    overflow: hidden;
+#aboutInfo > p {
+  float: left;
+  width: 290px;
+  height: 100%;
+  margin: 5px;
+  font-size: 18px;
+  font-family: Andale Mono, AndaleMono, monospace, arial;
+  overflow: hidden;
 }
 
 #aboutImage {
-    float: right;
-    width: 220px;
+  float: right;
+  width: 220px;
 }
 
-#aboutImage>img {
-    max-width: 100%;
-    max-height: 100%;
+#aboutImage > img {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 #openingHours {
-    margin-left: 10px;
-    margin-top: 100px;
-    width: 300px;
-    height: 100px;
-    border: 5px solid #401616;
-    padding: 10px;
-    background-color: #602121;
+  margin-left: 10px;
+  margin-top: 100px;
+  width: 300px;
+  height: 100px;
+  border: 5px solid #401616;
+  padding: 10px;
+  background-color: #602121;
 }
 
 #openingTitle {
-    margin-left: auto;
-    margin-right: auto;
-    font-family: Andale Mono, AndaleMono, monospace, arial;
-    text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Andale Mono, AndaleMono, monospace, arial;
+  text-align: center;
 }
 
-#openingTitle>h3 {
-    margin: 0px;
-    color: #FFFFFF;
+#openingTitle > h3 {
+  margin: 0px;
+  color: #ffffff;
+  font-size: 25px;
 }
 
 #openingTimes {
-    font-family: Andale Mono, AndaleMono, monospace, arial;
-    font-size: 15px;
-    padding: 10px;
-    text-align: center;
-    margin: 0px;
+  font-family: Andale Mono, AndaleMono, monospace, arial;
+  font-size: 15px;
+  padding: 10px;
+  text-align: center;
+  margin: 0px;
 }
 
-#openingTimes>p {
-    color: white;
+#openingTimes > p {
+  color: white;
+  font-size: 13px;
 }
 
 #homepageDaily {
-    margin-top: 20px;
-    margin-left: 10px;
-    width: 320px;
-    height: 350px;
-    border: 5px solid #614035;
-    background-color: #FFFAF3;
-
+  margin-top: 20px;
+  margin-left: 10px;
+  width: 320px;
+  height: 350px;
+  border: 5px solid #614035;
+  background-color: #fffaf3;
 }
 
-#homepageDaily>h1 {
-    line-height: 1em;
-    margin: 10px;
+#homepageDaily > h1 {
+  line-height: 1em;
+  margin: 10px;
 }
 
-#homepageDaily>h2 {
-    font-family: Andale Mono, AndaleMono, monospace, arial;
-    color: #602121;
-    padding: 0px;
-    margin: 0px;
-    line-height: 1em;
+#homepageDaily > h2 {
+  font-family: Andale Mono, AndaleMono, monospace, arial;
+  color: #602121;
+  padding: 0px;
+  margin: 0px;
+  line-height: 1em;
 }
 
-#homepageDaily>p {
-    width: 150px;
-    font-family: Andale Mono, AndaleMono, monospace, arial;
-    font-size: small;
-    color: #602121;
-    padding: 10px;
-    margin: 0px;
+#homepageDaily > p {
+  width: 150px;
+  font-family: Andale Mono, AndaleMono, monospace, arial;
+  font-size: small;
+  color: #602121;
+  padding: 10px;
+  margin: 0px;
 }
 
 #todayHeader {
-    font-size: 50px;
-    margin: 0px;
-    padding: 5px;
-    text-align: center;
+  font-size: 50px;
+  margin: 0px;
+  padding: 5px;
+  text-align: center;
 }
 
-#homepageDaily>img {
-    float: right;
-    max-width: 50%;
-    padding: 5px;
-    margin-top: 10px;
+#homepageDaily > img {
+  float: right;
+  max-width: 50%;
+  padding: 5px;
+  margin-top: 10px;
 }
 
-#homepageDaily>#price {
-    float: left;
-    font-size: 35px;
-    padding-left: 15px;
-    padding-top: 20px;
-    font-family: Andale Mono, AndaleMono, monospace, arial;
-    color: #404E31;
+#homepageDaily > #price {
+  float: left;
+  font-size: 35px;
+  padding-left: 15px;
+  padding-top: 20px;
+  font-family: Andale Mono, AndaleMono, monospace, arial;
+  color: #404e31;
 }
 
-#homepageDaily>#menuLink {
-    float: right;
+#homepageDaily > #menuLink {
+  float: right;
 }
 
-#homepageDaily>#menuLink>img {
-    max-height: 65px;
-    margin: 10px;
+#homepageDaily > #menuLink > img {
+  height: 60px;
+  width: 120px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+#homepageDaily > #menuLink > img:hover {
+  height: 65px;
+  width: 125px;
 }
 
 #dailyMenu {
-    max-width: 100%;
-    max-height: 100%;
+  max-width: 100%;
+  max-height: 100%;
 }
 
-@media (max-width: 1100px) {
-    #homepageContainer {
-        flex-direction: column;
-    }
+@media only screen and (max-width: 1023px) {
+  #homepageContainer {
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
 
-    #aboutUs {
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 0px;
-    }
+  #aboutUs {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+  }
 
-    #rightSide {
-        margin-left: auto;
-        margin-right: auto;
-        flex-direction: row;
-    }
+  #rightSide {
+    width: 69%;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: row;
+  }
+
+  #openingHours {
+    margin-top: 20px;
+    margin-left: -15px;
+    margin-right: auto;
+    width: 100%;
+    height: 100px;
+  }
+
+  #homepageDaily {
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 70px;
+  }
 }

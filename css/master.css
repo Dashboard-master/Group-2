@@ -3,7 +3,7 @@
 @import url("daily_menu.css");
 @import url("homepage.css");
 @import url("contact_us.css");
-@import url("menu.css");  
+@import url("menu.css");
 
 /*Generell css*/
 html {
@@ -16,7 +16,7 @@ body {
   background-image: url("../media/bg.jpg"),
   linear-gradient(rgba(27, 17, 17, 0.7), rgba(27, 17, 17, 0.7));
   background-blend-mode: overlay;
-  background-size: 100%;
+  background-size: cover;
   background-attachment: fixed;
 }
 
@@ -31,7 +31,7 @@ h3 {
 p {
   font-family: Andale Mono, monospace, arial;
   color: black;
-  font-size: 12px;
+  font-size: 12pt;
 }
 
 label {
