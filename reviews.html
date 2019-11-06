@@ -8,57 +8,61 @@
   <body>
     <script src="./javascript/header.js" charset="utf-8"></script>
 
-    <div id="all_reviews_container">
-      <div id="latest_reviews_container">
-        <h1>LATEST REVIEWS</h1>
-        <div class="overall_rating">
-          <p id="overall_rating_text">0 people have rated us</p>
-          <span id="star_o1">☆</span><span id="star_o2">☆</span
-          ><span id="star_o3">☆</span><span id="star_o4">☆</span
-          ><span id="star_o5">☆</span>
+    <div id="page_container">
+      <div id="all_reviews_container">
+        <div id="latest_reviews_container">
+          <h1>LATEST REVIEWS</h1>
+          <div class="overall_rating">
+            <p id="overall_rating_text">0 people have rated us</p>
+            <div id="overallStars">
+              <span id="star_o1">☆</span><span id="star_o2">☆</span
+              ><span id="star_o3">☆</span><span id="star_o4">☆</span
+              ><span id="star_o5">☆</span>
+            </div>
+          </div>
         </div>
-      </div>
-      <div id="user_reviews"></div>
-    </div>
-
-    <div id="give_review_container">
-      <h2>WANT TO LEAVE A REVIEW?</h2>
-
-      <textarea
-        name="Text"
-        cols="40"
-        rows="5"
-        id="user_text_review"
-        placeholder="Please write your review here..."
-      ></textarea>
-
-      <div id="user_names">
-        <label for="Name">Name:&nbsp;&nbsp;</label>
-        <input type="text" id="user_name" name="Name" />
+        <div id="user_reviews"></div>
       </div>
 
-      <div id="input_email">
-        <label for="User email">Email:&nbsp;</label>
-        <input type="email" id="user_email" name="User email" />
-      </div>
+      <div id="give_review_container">
+        <h2>WANT TO LEAVE A REVIEW?</h2>
 
-      <div id="star_rating" onmouseover="hoverStars()">
-        <label for="rating">Choose a rating:</label>
-        <div class="rating">
-          <span id="star5" onclick="getUserRating(5)">☆</span
-          ><span id="star4" onclick="getUserRating(4)">☆</span
-          ><span id="star3" onclick="getUserRating(3)">☆</span
-          ><span id="star2" onclick="getUserRating(2)">☆</span
-          ><span id="star1" onclick="getUserRating(1)">☆</span>
+        <textarea
+          name="Text"
+          cols="40"
+          rows="5"
+          id="user_text_review"
+          placeholder="Please write your review here..."
+        ></textarea>
+
+        <div id="user_names">
+          <label for="Name">Name:&nbsp;&nbsp;</label>
+          <input type="text" id="user_name" name="Name" />
         </div>
+
+        <div id="input_email">
+          <label for="User email">Email:&nbsp;</label>
+          <input type="email" id="user_email" name="User email" />
+        </div>
+
+		<div id="star_rating">
+        	<label for="rating">Choose a rating:</label>
+        	<div class="rating" onmouseover="hoverStars()" onmouseout="drawStars()">
+          		<span id="star5" onclick="getUserRating(5)">☆</span>
+		  		<span id="star4" onclick="getUserRating(4)">☆</span>
+		  		<span id="star3" onclick="getUserRating(3)">☆</span>
+				<span id="star2" onclick="getUserRating(2)">☆</span>
+				<span id="star1" onclick="getUserRating(1)">☆</span>
+        	</div>
       </div>
 
-      <input
-        type="submit"
-        name="send_review"
-        value="SEND REVIEW"
-        id="new_review"
-      />
+        <input
+          type="submit"
+          name="send_review"
+          value="SEND REVIEW"
+          id="new_review"
+        />
+      </div>
     </div>
 
     <!-- Viktig at footer.js er nederst i bodyen  -->

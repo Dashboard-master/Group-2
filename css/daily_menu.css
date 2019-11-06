@@ -56,7 +56,6 @@
 	width: 258px;
 	height: 405px;
 	border: 7px solid #614035;
-	border-radius: 7px;
 	background-color: #FFFAF3;
 	padding: 15px;
 	position: relative;
@@ -86,12 +85,12 @@
 .preview_offer_left:hover  {
 	cursor: pointer;
 	transform: scale(0.73) perspective(8cm) rotateY(-25deg);
-	transition: all 0.5s;
+	transition: all 1s;
 }
 .preview_offer_right:hover {
 	cursor: pointer;
 	transform: scale(0.73) perspective(8cm) rotateY(25deg);
-	transition: all 0.5s;
+	transition: all 1s;
 }
 
 .hidden_offer_left {
@@ -114,6 +113,7 @@
 }
 .offer > p {
 	margin-top: 5px;
+	margin-bottom: 0;
 	height: 100px;
 	width: 258px;
 	overflow: hidden;
@@ -124,12 +124,13 @@
 }
 .price {
 	margin: 0;
-	width: 100%;
+	right: 0;
 	bottom: 0;
 	text-align: right;
 	font-weight: bold;
 	font-size: 36px;
 	color: #404E31;
+	float: right;
 }
 @media only screen and (max-width: 1023px){
 	.preview_offer_left {
