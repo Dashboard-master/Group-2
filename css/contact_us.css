@@ -1,5 +1,5 @@
 #map {
-  width: 400px;
+  width: 430px;
 }
 
 /* Kode for kontakt oss */
@@ -16,9 +16,9 @@
   background-color: rgba(255, 250, 243, 0.86);
   font-family: "Andale Mono", Arial;
   font-size: 12pt;
-  width: 1024px;
+  width: 870px;
   padding: 0px 20px;
-  margin: 50px;
+  margin: 50px 10px 10px 10px;
   border: 4px solid #614035;
   display: inline-flex;
   flex-direction: column;
@@ -31,24 +31,25 @@
 
 .flexbox-2 {
   border: 4px solid #614035;
-  width: 400px;
+  width: 430px;
   height: 300px;
   display: inline-grid;
   flex-wrap: wrap;
   padding-top: 0px;
-  margin: 10px 10px 20px 10px;
+  margin: 10px;
   background-color: rgba(255, 250, 243, 0.86);
   font-family: "Andale Mono", Arial;
   justify-content: center;
+  margin-right: -70px;
 }
 
 .flexbox-3 {
   border: 4px solid #614035;
-  width: 400px;
+  width: 430px;
   height: 300px;
   display: inline-flex;
   flex-wrap: wrap;
-  margin: 10px 10px 20px 10px;
+  margin: 10px;
   background-color: rgba(255, 250, 243, 0.86);
   font-family: "Andale Mono", Arial;
   font-size: 12pt;
@@ -61,17 +62,18 @@
 }
 
 .flexbox-4 {
-  width: 414px;
+  width: 430px;
   height: 300px;
   display: inline-flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  margin: 10px 10px 20px 10px;
+  margin: 10px;
+  margin-right: -50px;
 }
 
 #barista {
-  width: 400px;
+  width: 430px;
   height: 250px;
   background: #fffaf3;
 }
@@ -82,12 +84,6 @@
   padding-bottom: 0px;
   display: flex;
   justify-content: center;
-}
-
-@media only screen and (max-width: 1023px) {
-  .flexbox-container {
-    width: 100%;
-  }
 }
 
 .logo {
@@ -116,4 +112,30 @@
   margin-bottom: 0px;
   font-size: 30pt;
   color: #614035;
+}
+
+@media only screen and (max-width: 1023px) {
+  .flexbox-container {
+    width: 85%;
+  }
+
+  .flexbox-1 {
+    width: 100%;
+    margin: 10px auto;
+    margin-top: 50px;
+  }
+
+  .flexbox-2 {
+    width: 100%;
+    margin: 10px auto;
+  }
+
+  .flexbox-3 {
+    margin: 10px auto;
+  }
+
+  .flexbox-4 {
+    margin: 10px auto;
+    height: 120px;
+  }
 }
