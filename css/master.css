@@ -3,7 +3,7 @@
 @import url("daily_menu.css");
 @import url("homepage.css");
 @import url("contact_us.css");
-@import url("menu.css");
+@import url("menu.css");  
 
 /*Generell css*/
 html {
@@ -14,7 +14,7 @@ body {
   margin: 0;
   overflow: hidden;
   background-image: url("../media/bg.jpg"),
-    linear-gradient(rgba(27, 17, 17, 0.7), rgba(27, 17, 17, 0.7));
+  linear-gradient(rgba(27, 17, 17, 0.7), rgba(27, 17, 17, 0.7));
   background-blend-mode: overlay;
   background-size: 100%;
   background-attachment: fixed;
@@ -47,5 +47,4 @@ label {
   position: sticky;
   bottom: 0;
   width: 100%;
-  border-top: 1px solid #2b3521;
 }
