@@ -16,9 +16,9 @@
 	background-color: #FFFAF3;
 	font-family: "Andale Mono", Arial;
 	font-size: 12pt;
-	width: 1024px;
+	width: 870px;
 	padding: 0px 20px;
-	margin: 50px;
+	margin: 10px;
 	border: 7px solid #614035;
 	display: inline-flex;
 	flex-direction: column;
@@ -90,7 +90,7 @@
 
 @media only screen and (max-width: 1023px) {
 	.flexbox-container {
-		width: 100%;
+		width: 85%;
 	}
 }
 
