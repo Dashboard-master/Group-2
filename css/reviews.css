@@ -70,11 +70,10 @@ h2 {
 }
 
 #give_review_container {
-  margin-top: 40px;
   padding-top: 10px;
   width: 27%;
   margin-left: 50px;
-  height: 320px;
+  height: 100%;
 }
 
 #userReview {
