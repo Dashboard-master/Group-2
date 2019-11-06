@@ -18,7 +18,7 @@
 	font-size: 12pt;
 	width: 870px;
 	padding: 0px 20px;
-	margin: 10px;
+	margin: 50px 10px 10px 10px;
 	border: 7px solid #614035;
 	display: inline-flex;
 	flex-direction: column;
@@ -37,7 +37,7 @@
 	display: inline-grid;
 	flex-wrap: wrap;
 	padding-top: 0px;
-	margin: 10px 10px 20px 10px;
+	margin: 10px;
 	background-color: #FFFAF3;
 	font-family: "Andale Mono", Arial;
 	justify-content: center;
@@ -51,7 +51,7 @@
 	height: 300px;
 	display: inline-flex;
 	flex-wrap: wrap;
-	margin: 10px 10px 20px 10px;
+	margin: 10px;
 	background-color: #FFFAF3;
 	font-family: "Andale Mono", Arial;
 	font-size: 12pt;
@@ -71,7 +71,7 @@
 	flex-wrap: wrap;
 	justify-content: space-around;
 	align-items: center;
-	margin: 10px 10px 20px 10px;
+	margin: 10px;
 }
 
 
