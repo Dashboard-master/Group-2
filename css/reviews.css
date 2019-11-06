@@ -214,3 +214,18 @@ span {
     margin-left: 4%;
   }
 }
+
+@media only screen and (max-width: 750px) {
+  #page_container {
+    margin-top: 25%;
+    margin-left: -7%;
+  }
+
+  #give_review_container {
+    width: 80%;
+  }
+
+  #all_reviews_container {
+    width: 80%;
+  }
+}

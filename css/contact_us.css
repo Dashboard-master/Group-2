@@ -139,3 +139,22 @@
     height: 120px;
   }
 }
+
+@media only screen and (max-width: 750px) {
+  .flexbox-container {
+    margin-top: 20%;
+  }
+
+  .flexbox-3 {
+    width: 98%;
+  }
+
+  #barista {
+    width: 100%;
+    height: auto;
+  }
+
+  .flexbox-4 {
+    height: 100%;
+  }
+}

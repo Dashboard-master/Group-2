@@ -153,3 +153,9 @@
     transform: perspective(9cm);
   }
 }
+
+@media only screen and (max-width: 750px) {
+  .daily_menu_container {
+    margin-top: 30%;
+  }
+}

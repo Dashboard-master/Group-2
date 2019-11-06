@@ -1,58 +1,82 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-	<head>
-		<meta charset="utf-8">
-		<title>Daily Offers</title>
-		<link rel="stylesheet" href="./css/master.css">
-	</head>
-	<body>
-		<script src="./javascript/header.js" charset="utf-8"></script>
-		<header></header>
-		<section class="daily_menu_container">
-			<button id="previous_offer_button" class="arrow_container">
-				<img src="./media/arrow-left.svg" alt="previous offer button" class="arrows">
-			</button>
-			<button id="next_offer_button" class="arrow_container">
-				<img src="./media/arrow-right.svg" alt="next offer button" class="arrows">
-			</button>
-			<section class="carousel_container">
-				<article class="offer hidden_offer_left" style="visibility: hidden;">
-					<!-- tom for å holde plasseringen til resten av elementene riktig  -->
-				</article>
-				<article class="offer hidden_offer_left">
-					<h2>Yesterday:</h2>
-					<img src="./media/coffee_2.jpg" alt="Image of todays offer">
-					<h3>Lorem Ipsum</h3>
-					<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-					<p class="price">35,-</p>
-				</article>
-				<article class="offer current">
-					<h2>Today:</h2>
-					<img src="./media/coffee_3.jpg" alt="Image of todays offer">
-					<h3>Lorem Ipsum</h3>
-					<p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</p>
-					<p class="price">45,-</p>
-				</article>
-				<article class="offer hidden_offer_right">
-					<h2>Tomorrow:</h2>
-					<img src="./media/coffee_2.jpg" alt="Image of todays offer">
-					<h3>Lorem Ipsum</h3>
-					<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
-					<p class="price">39,-</p>
-				</article>
-				<article class="offer hidden_offer_right">
-					<h2>Day x:</h2>
-					<img src="./media/coffee.jpg" alt="Image of todays offer">
-					<h3>Lorem Ipsum</h3>
-					<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC</p>
-					<p class="price">39,-</p>
-				</article>
-				<article class="offer hidden_offer_right" style="visibility: hidden;">
-					<!-- tom for å holde plasseringen til resten av elementene riktig  -->
-				</article>
-			</section>
-		</section>
-		<script src="./javascript/daily_offer_carousel.js" charset="utf-8"></script>
-		<script src="./javascript/footer.js" charset="utf-8"></script>
-	</body>
+  <head>
+    <meta
+      charset="utf-8"
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+    <title>Daily Offers</title>
+    <link rel="stylesheet" href="./css/master.css" />
+  </head>
+  <body>
+    <script src="./javascript/header.js" charset="utf-8"></script>
+    <header></header>
+    <section class="daily_menu_container">
+      <button id="previous_offer_button" class="arrow_container">
+        <img
+          src="./media/arrow-left.svg"
+          alt="previous offer button"
+          class="arrows"
+        />
+      </button>
+      <button id="next_offer_button" class="arrow_container">
+        <img
+          src="./media/arrow-right.svg"
+          alt="next offer button"
+          class="arrows"
+        />
+      </button>
+      <section class="carousel_container">
+        <article class="offer hidden_offer_left" style="visibility: hidden;">
+          <!-- tom for å holde plasseringen til resten av elementene riktig  -->
+        </article>
+        <article class="offer hidden_offer_left">
+          <h2>Yesterday:</h2>
+          <img src="./media/coffee_2.jpg" alt="Image of todays offer" />
+          <h3>Lorem Ipsum</h3>
+          <p>
+            It is a long established fact that a reader will be distracted by
+            the readable content of a page when looking at its layout.
+          </p>
+          <p class="price">35,-</p>
+        </article>
+        <article class="offer current">
+          <h2>Today:</h2>
+          <img src="./media/coffee_3.jpg" alt="Image of todays offer" />
+          <h3>Lorem Ipsum</h3>
+          <p>
+            The point of using Lorem Ipsum is that it has a more-or-less normal
+            distribution of letters.
+          </p>
+          <p class="price">45,-</p>
+        </article>
+        <article class="offer hidden_offer_right">
+          <h2>Tomorrow:</h2>
+          <img src="./media/coffee_2.jpg" alt="Image of todays offer" />
+          <h3>Lorem Ipsum</h3>
+          <p>
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some form.
+          </p>
+          <p class="price">39,-</p>
+        </article>
+        <article class="offer hidden_offer_right">
+          <h2>Day x:</h2>
+          <img src="./media/coffee.jpg" alt="Image of todays offer" />
+          <h3>Lorem Ipsum</h3>
+          <p>
+            Contrary to popular belief, Lorem Ipsum is not simply random text.
+            It has roots in a piece of classical Latin literature from 45 BC
+          </p>
+          <p class="price">39,-</p>
+        </article>
+        <article class="offer hidden_offer_right" style="visibility: hidden;">
+          <!-- tom for å holde plasseringen til resten av elementene riktig  -->
+        </article>
+      </section>
+    </section>
+    <script src="./javascript/daily_offer_carousel.js" charset="utf-8"></script>
+    <script src="./javascript/footer.js" charset="utf-8"></script>
+  </body>
 </html>

@@ -43,7 +43,18 @@
   width: 220px;
 }
 
+#aboutImage2 {
+  display: none;
+  float: right;
+  width: 220px;
+}
+
 #aboutImage > img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#aboutImage2 > img {
   max-width: 100%;
   max-height: 100%;
 }
@@ -194,5 +205,59 @@
     margin: 0 auto;
     margin-top: 20px;
     margin-bottom: 70px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  #aboutUs {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+
+  #aboutInfo {
+    width: 100%;
+  }
+
+  #aboutInfo > p {
+    width: 100%;
+  }
+
+  #aboutImage {
+    display: none;
+  }
+
+  #aboutImage2 {
+    display: block;
+    padding-top: 20px;
+    width: 100%;
+  }
+
+  #rightSide {
+    height: 100%;
+    width: 90%;
+    flex-direction: column;
+  }
+
+  #openingHours {
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-left: -5px;
+    width: 95%;
+  }
+
+  #homepageDaily {
+    width: 95%;
+  }
+
+  #homepageDaily > h2 {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 355px) {
+  #menuLink {
+    margin-top: -20%;
   }
 }
