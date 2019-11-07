@@ -63,8 +63,9 @@
   font-size: 16px;
   overflow: hidden;
   box-shadow: 5px 5px 2.5px 0px rgba(60, 60, 60, 0.5);
-  transition: all 1s, width 0.8s;
+  transition: all 1s, width 0.7s;
   transition-timing-function: ease-in-out;
+  display: block;
 }
 .current {
   margin: 0 58px;
@@ -126,15 +127,17 @@
   max-height: 172px;
 }
 .price {
-  margin: 0;
-  right: 0;
-  bottom: 0;
+  right: 15px;
+  bottom: 15px;
   text-align: right;
   font-weight: bold;
   font-size: 36px !important;
   color: #404e31;
   float: right;
   margin-top: -20px;
+  position: fixed;
+  height: 40px !important;
+  max-width: max-content;
 }
 
 @media only screen and (max-width: 1023px) {

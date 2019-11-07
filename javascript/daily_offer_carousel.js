@@ -25,6 +25,13 @@ else {
 }
 offer_list[current_index].classList = "offer current"
 offer_list[current_index].querySelector("h2").innerText = 'Today: '
+for (let i = 1; i < current_index - 1; i++){
+	offer_list[i].classList = "offer hidden_offer_left"
+}
+for (let i = 7; i > current_index; i--){
+	offer_list[i].classList = "offer hidden_offer_right"
+}
+
 
 function next_offer() {
 	if (current_index < end_index - 1){
