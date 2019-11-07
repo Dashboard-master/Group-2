@@ -154,6 +154,14 @@
     height: auto;
   }
 
+  #ClarkKentBox {
+    height: 100%;
+  }
+
+  #map {
+    width: 100%;
+  }
+
   .flexbox-4 {
     height: 100%;
   }
