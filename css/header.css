@@ -98,6 +98,9 @@
   align-self: flex-start;
   font-size: 90px;
   color: #3b2720;
+  background-color: rgb(148, 99, 83);
+  height: 112px;
+  border-right: 1px solid #614035;
 }
 
 .home_button2 {
@@ -112,7 +115,7 @@
 
 .home_button2:hover {
   width: 210px;
-  height: auto;
+  height: 160px;
 }
 
 .sidenav {
@@ -132,7 +135,7 @@
   padding: 30px 8px 8px 32px;
   text-decoration: none;
   font-size: 15px;
-  color: #ffefea;
+  color: #fffaf3;
   display: block;
   transition: 0.3s;
 }

@@ -6,7 +6,7 @@
 .flexbox-container {
   display: flex;
   width: 1024px;
-  margin: 100px auto;
+  margin: 130px auto;
   height: auto;
   flex-wrap: wrap;
   justify-content: space-around;
