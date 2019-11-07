@@ -70,11 +70,10 @@ h2 {
 }
 
 #give_review_container {
-  margin-top: 40px;
   padding-top: 10px;
   width: 27%;
   margin-left: 50px;
-  height: 320px;
+  height: 100%;
 }
 
 #userReview {
@@ -213,5 +212,20 @@ span {
     margin: 0;
     margin-bottom: 50px;
     margin-left: 4%;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  #page_container {
+    margin-top: 25%;
+    margin-left: -7%;
+  }
+
+  #give_review_container {
+    width: 80%;
+  }
+
+  #all_reviews_container {
+    width: 80%;
   }
 }
