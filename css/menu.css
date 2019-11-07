@@ -1,173 +1,197 @@
 #all {
-  font-family: monospace;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  color: black;
-  margin-top: 200px;
-  margin-bottom: 200px;
+    font-family: monospace;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: black;
+    margin-top: 200px;
+    margin-bottom: 200px;
 }
 
 /*Kun boksene*/
 
 .content {
-  background-color: #fffaf3;
-  padding: 20px;
-  border: 1px solid #614035;
-  width: 80%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  -webkit-animation-name: animatetop;
-  -webkit-animation-duration: 0.4s;
-  animation-name: animatetop;
-  animation-duration: 0.4s;
+    background-color: #fffaf3;
+    padding: 20px;
+    border: 1px solid #614035;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
 }
 
 /* Add Animation */
 @-webkit-keyframes animatetop {
-  from {
-    top: -300px;
-    opacity: 0;
-  }
-  to {
-    top: 0;
-    opacity: 1;
-  }
+    from {
+        top: -300px;
+        opacity: 0;
+    }
+
+    to {
+        top: 0;
+        opacity: 1;
+    }
 }
 
 @keyframes animatetop {
-  from {
-    top: -300px;
-    opacity: 0;
-  }
-  to {
-    top: 0;
-    opacity: 1;
-  }
+    from {
+        top: -300px;
+        opacity: 0;
+    }
+
+    to {
+        top: 0;
+        opacity: 1;
+    }
 }
 
-.box {
-  background-color: rgba(255, 250, 243, 0.85);
-  border: 4px solid #614035;
-  width: 23%;
-  height: 480px;
+.box,
+.box2 {
+    background-color: rgba(255, 250, 243, 0.85);
+    border: 4px solid #614035;
+    width: 23%;
+    height: 480px;
 }
+
 
 /*Kun for listene*/
 
 .headline,
 .underline {
-  text-decoration: overline underline;
-  text-align: center;
-  font-size: 2em;
-  color: #614035;
-  margin-top: 10px;
+    text-decoration: overline underline;
+    text-align: center;
+    font-size: 2em;
+    color: #614035;
+    margin-top: 20px;
 }
 
+
 .list {
-  margin: auto;
-  display: flex;
-  flex-wrap: wrap;
-  align-content: center;
-  list-style: none;
-  text-align: left;
-  display: inline-block;
-  font-size: 1em;
-  padding-left: 1%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    list-style: none;
+    text-align: left;
+    display: inline-block;
+    font-size: 1em;
+    padding-left: 1%;
 }
 
 .top_price,
 .low_price {
-  padding-left: 14em;
-  line-height: 10pt;
+    padding-left: 10em;
+    line-height: 1.2em;
 }
 
 .list:not(:last-child),
 .top_price:not(:last-child),
 .low_price:not(:last-child) {
-  margin-bottom: 4px;
+    margin-bottom: 4px;
 }
 
 /*Bilder*/
 
 #coffee {
-  width: 15%;
-  height: 480px;
-  border-top: 4px solid #614035;
-  border-bottom: 4px solid #614035;
+    width: 15%;
+    height: 480px;
+    border-top: 4px solid #614035;
+    border-bottom: 4px solid #614035;
 }
 
 #content-pic {
-  width: 70%;
-  height: 200px;
-  display: block;
-  margin: auto;
+    width: 70%;
+    height: 200px;
+    display: block;
+    margin: auto;
+    margin-top: 1.5em;
 }
 
 /* Styling for button og content som kommer etter det */
 
 .click_btn {
-  font-family: monospace;
-  border: none;
-  padding: 0px;
-  margin: 2px;
-  text-decoration: underline;
+    font-family: monospace;
+    border: none;
+    padding: 0px;
+    margin: 2px;
+    text-decoration: underline;
+    background-color: unset;
 }
 
 .click-h1,
 .popup_price {
-  text-decoration: underline;
-  text-align: center;
-  font-size: 2em;
-  color: #614035;
-  font-weight: bold;
+    text-align: center;
+    font-size: 2em;
+    color: #614035;
+    font-weight: bold;
 }
 
-.popup {
-  display: none;
-  position: absolute;
-  z-index: 1;
-  width: 35%;
-  height: 70%;
-  top: 46%;
-  left: 34%;
-  background-color: rgba(0, 0, 0, 0);
+.click-h1 {
+    text-decoration: underline;
+}
+
+#popup {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    width: 35%;
+    height: 70%;
+    top: 46%;
+    left: 34%;
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .popup2 {
-  display: none;
-  position: absolute;
-  z-index: 1;
-  width: 35%;
-  height: 70%;
-  top: 46%;
-  right: 32%;
-  background-color: rgba(0, 0, 0, 0);
-}
-
-.text:not(:last-child){
-    margin-bottom: 7px;
+    display: none;
+    position: absolute;
+    z-index: 1;
+    width: 35%;
+    height: 70%;
+    top: 46%;
+    right: 32%;
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .close {
-  float: right;
-  font-size: 3em;
-  color: lightcoral;
+    float: right;
+    font-size: 3em;
+    color: lightcoral;
 }
 
 .close:hover,
 .close:focus,
 .click_btn:hover,
 .click_btn:focus {
-  color: black;
-  cursor: pointer;
+    color: black;
+    cursor: pointer;
 }
 
-@media only screen and (max-width: 1023px) {
-}
+@media only screen and (max-width: 1023px) {}
 
 @media only screen and (min-width: 1040px) {
-  .top_price,
-  .low_price {
-    padding-left: 11em;
-  }
+
+    .top_price,
+    .low_price {
+        padding-left: 11em;
+    }
+}
+
+.menu_items>ul {
+    list-style: none;
+    display: flex;
+    padding: 0 20px;
+    margin: 0.5rem 0;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.name {
+    text-decoration: underline;
+}
+
+.name:hover {
+    cursor: pointer;
+    color: #614035;
 }
