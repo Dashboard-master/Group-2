@@ -1,8 +1,8 @@
 let coldBrews = [
   {
     title: "Vegan Pumpkin Cream Cold Brew",
-    text: `Pumpkin Cream Cold Brew, vegan style. No need to drive to Starbucks, 
-    shell out cash, and beg for substitutions. Stay here, get caffeinated, 
+    text: `Pumpkin Cream Cold Brew, vegan style. No need to drive to Starbucks,
+    shell out cash, and beg for substitutions. Stay here, get caffeinated,
     get cozy, stay happy.
   `,
     img: {
@@ -13,7 +13,7 @@ let coldBrews = [
   },
   {
     title: "Almond Milk Cold Brew Coffee Latte",
-    text: `Almond milk latte made with homemade cold brew iced cubes… 
+    text: `Almond milk latte made with homemade cold brew iced cubes…
     because no one wants a watery coffee drink once the ice melts.
   `,
     img: {
@@ -24,7 +24,7 @@ let coldBrews = [
   },
   {
     title: "Kiwi Fruit Smoothie",
-    text: `This simple kiwi, mango and pineapple fruit smoothie makes an ideal morning treat. 
+    text: `This simple kiwi, mango and pineapple fruit smoothie makes an ideal morning treat.
     It's an easy way to pack in the vitamins and give yourself a boost.
   `,
     img: {
@@ -35,7 +35,7 @@ let coldBrews = [
   },
   {
     title: "Strawberry Green Goddess Smoothie",
-    text: `Try this tasty breakfast smoothie to start your day, pairing sweet fruit with 
+    text: `Try this tasty breakfast smoothie to start your day, pairing sweet fruit with
     nutritious spinach and avocado for a dose of calcium, vitamin C, folate and fibre.
   `,
     img: {
@@ -69,7 +69,7 @@ let coldBrews = [
 let warmBrews = [
   {
     title: "Vegan Hot Chocolate",
-    text: `Rich and creamy homemade vegan hot chocolate is the perfect way to 
+    text: `Rich and creamy homemade vegan hot chocolate is the perfect way to
     warm you up from the cold of winter!
 `,
     img: {
@@ -80,7 +80,7 @@ let warmBrews = [
   },
   {
     title: "Thai Almond Milk Bubble Tea",
-    text: `If you mix tea with cream and sugar and squishy sweet bubbles, 
+    text: `If you mix tea with cream and sugar and squishy sweet bubbles,
     it doesn’t much taste like tea anymore, does it?
 `,
     img: {
@@ -91,7 +91,7 @@ let warmBrews = [
   },
   {
     title: "Strawberry Tea",
-    text: `Brewed with - you guessed it - strawberries. 
+    text: `Brewed with - you guessed it - strawberries.
 `,
     img: {
       src: "media/strawberry-tea.jpg",
@@ -101,8 +101,8 @@ let warmBrews = [
   },
   {
     title: "Vanilla Almond Latte",
-    text: `This healthy Almond Latte is made with homemade vanilla almond 
-    milk creamer, and is naturally sweetened with dates! 
+    text: `This healthy Almond Latte is made with homemade vanilla almond
+    milk creamer, and is naturally sweetened with dates!
 `,
     img: {
       src: "media/vanillaalmond.jpg",
@@ -135,7 +135,7 @@ let warmBrews = [
 let dishes = [
   {
     title: "Pesto Pasta",
-    text: `Switch to a Parmesan-free vegan pesto sauce (this one is our favorite!) 
+    text: `Switch to a Parmesan-free vegan pesto sauce (this one is our favorite!)
     for a pasta dish everyone can enjoy.
 `,
     img: {
@@ -146,7 +146,7 @@ let dishes = [
   },
   {
     title: "Cucumber-Melon Soup",
-    text: `This one-pot gazpacho combines cool cucumbers with sweet honeydew for a 
+    text: `This one-pot gazpacho combines cool cucumbers with sweet honeydew for a
     totally vegan, totally delicious soup.`,
     img: {
       src: "media/cucumber_melon.jpg",
@@ -176,7 +176,7 @@ let dishes = [
   },
   {
     title: "Tofu Pad Thai",
-    text: `It may be hard to believe but this sweet and spicy pad thai is better 
+    text: `It may be hard to believe but this sweet and spicy pad thai is better
     than takeout (yep, we went there).
 `,
     img: {
@@ -200,7 +200,7 @@ let dishes = [
 let desserts = [
   {
     title: "Chocolate Mendiants",
-    text: `Melted chocolate topped with anything your heart desires. 
+    text: `Melted chocolate topped with anything your heart desires.
     Baked with dairy-free chocolate and they're a 100% vegan treat.`,
     img: {
       src: "media/chocolate-mendiants.jpg",
@@ -210,8 +210,8 @@ let desserts = [
   },
   {
     title: "Churro Banana Bites",
-    text: `Since this is made with bananas instead of dough, that means it's healthy, 
-    right? Comes with a vegan chocolate as dipping sauce, 
+    text: `Since this is made with bananas instead of dough, that means it's healthy,
+    right? Comes with a vegan chocolate as dipping sauce,
     or just eat them on their own — they're that good.
 `,
     img: {
@@ -222,7 +222,7 @@ let desserts = [
   },
   {
     title: "Frozen Banana Creams",
-    text: `This "milkshake" brings all the vegans to the yard, thanks to frozen 
+    text: `This "milkshake" brings all the vegans to the yard, thanks to frozen
     bananas and coconut milk.
 `,
     img: {
@@ -253,7 +253,7 @@ let desserts = [
   },
   {
     title: "Basil-Berry Lemonade Sorbet",
-    text: `Freshen up your weeknights with this pretty-in-pink sorbet. 
+    text: `Freshen up your weeknights with this pretty-in-pink sorbet.
 `,
     img: {
       src: "media/sorbet.jpg",
@@ -263,9 +263,15 @@ let desserts = [
   }
 ];
 
+let close_container = document.querySelector(".close_popup");
+close_container.addEventListener("click", () => {
+	closePopup()
+})
+
 function closePopup() {
   let box = document.getElementById("popup");
   box.style = "display: none";
+  close_container.style = "display: none;";
 }
 
 function getItems(category) {
@@ -295,12 +301,13 @@ function showPopup(num, category) {
   box.innerHTML = `<div class="content">
               <span class="close" onclick="closePopup()">&times;</span>
               <h1 class="click-h1">${item.title}</h1>
-               <p class="text">${item.text}
+              <p class="text">${item.text}
               <img id="content-pic" src="${item.img.src}" ${item.img.alt}>
               <p class="popup_price">${item.price}</p>
               </p>
               </div>`;
-  box.style = "display:block";
+  box.style = "display: block";
+  close_container.style = "display: block";
 }
 
 function addItems(category, parentId) {
