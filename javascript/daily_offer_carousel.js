@@ -1,5 +1,7 @@
 const next_button = document.getElementById('next_offer_button')
 const previous_button = document.getElementById('previous_offer_button')
+next_button.addEventListener("click", next_offer)
+previous_button.addEventListener("click", previous_offer)
 
 function update_image_buttons (){
 	let next_image = document.querySelector(".preview_offer_right")
@@ -8,19 +10,21 @@ function update_image_buttons (){
 	previous_image.addEventListener("click", previous_offer)
 }
 
-next_button.addEventListener("click", next_offer)
-previous_button.addEventListener("click", previous_offer)
-
+let d = new Date()
+let today = d.getDay()
 let offer_list = document.querySelectorAll(".offer")
-let start_offer = document.querySelector(".current")
-let current_index
 let end_index = offer_list.length - 1
 
-for (let i = 0; i < offer_list.length; i++) {
-	if(offer_list[i] == start_offer) {
-		current_index = i
-	}
+
+let current_index
+if (today == 0){
+	current_index = offer_list[7]
 }
+else {
+	current_index = today
+}
+offer_list[current_index].classList = "offer current"
+offer_list[current_index].querySelector("h2").innerText = 'Today: '
 
 function next_offer() {
 	if (current_index < end_index - 1){
@@ -54,8 +58,8 @@ function previous_offer(){
 window.onload = () => {
 	offer_list[current_index - 1].classList = "offer preview_offer_left"
 	offer_list[current_index + 1].classList = "offer preview_offer_right"
-	console.log("kjørt");
 	update_image_buttons()
+
 }
 
 window.onkeydown = (e) => {
