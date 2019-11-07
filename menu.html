@@ -1,308 +1,53 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-	<head>
-        <title>MENU.project</title>
-        <meta
-      charset="utf-8"
-      name="viewport"
-      content="width=device-width, initial-scale=1"
-    />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="css/master.css" type="text/css" media="screen"> 
-	</head>
-    <body>
-        <script src="./javascript/header.js"></script>
-            <article id="all">
-                <div class="box">
-                    <h1 class="headline">COLD BREW</h1>
-          
-                    <ul class="list">
-                     <li><button id="frappuccino" class="click_btn" >Frappuccino</button></li>
-                         <div class="popup frappuccino" id="closeBox">
 
-                            <div class="content">
-                                 <span class="close">&times;</span>
-                                   <h1 class="click-h1">Frappuccino</h1>
-                                   <p class="text">Frappuccino is a really tasty drink. 
-                                    It is extra good when your coding of the website isn't working and you want something comforting to drink.
+<head>
+  <title>MENU.project</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/master.css" type="text/css" media="screen">
+</head>
 
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                                   <img id="content-pic" src="media/coffee.jpg">
-                                   <p class="popup_price">Pris: 60kr</p>
-                                   </p>
-                            </div>
-                         </div>
-                    <li><button id="bubbleTea" class="click_btn">Bubble Tea</button></li>
-                          <div class="popup bubbleTea">
-                            <div class="content">
-                                        <span class="close">&times;</span>
-                                        <p>Frappuccino is delicious</p>
-                            </div>
-                          </div>
-                                <li><button id="smoothies" class="click_btn">Smoothie</button></li>
-                                <div class="popup smoothies">
-                                    <div class="content">
-                                        <span class="close">&times;</span>
-                                        <p>i want a smoothie</p>
-                                    </div>
-                                </div>
-                                <li><button id="iced_americano" class="click_btn"> Iced Americano</button></li>
-                                <div class="popup iced_americano">
+<body>
+  <script src="./javascript/header.js"></script>
+  <div id="all">
+    <div id="popup"></div>
+    <div class="box">
+      <div class="menu_box">
+        <h1 class="headline">COLD BREW</h1>
+        <div id="coldbrew_items" class="menu_items">
+        </div>
+      </div>
+      <div class="menu_box">
+        <h1 class="headline">WARM BREW</h1>
+        <div id="warmbrew_items" class="menu_items">
+          <ul>
+            <li class="name" onclick="showPopup()"></li>
+          </ul>
+        </div>
+      </div>
 
-                                    <div class="content">
-                                      <span class="close">&times;</span>
-                                      <p>i want a smoothie</p>
-                                    </div>
-                                    </div>
-                                <li><button id="affogato" class="click_btn">Affogato</button></li>
-                                <div class="popup affogato">
+    </div>
+    <img src="media/coffee.jpg" id="coffee" alt="coffee">
+    <div class="box2">
+      <div class="menu_box">
+        <h1 class="headline">DISHES</h1>
+        <div id="dishes_items" class="menu_items">
+        </div>
+      </div>
+      <div class="menu_box">
+        <h1 class="headline">DESSERTS</h1>
+        <div id="desserts_items" class="menu_items">
+          <ul>
+            <li class="name" onclick="showPopup()"></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./javascript/menu.js" charset="utf-8"></script>
+  <script src="./javascript/footer.js" charset="utf-8"></script>
+</body>
 
-                                        <div class="content">
-                                          <span class="close">&times;</span>
-                                          <p>Frappuccino is delicious</p>
-                                        </div>
-                                        </div>
-
-                                <li><button id="juice" class="click_btn">Juice</button></li>
-                                <div class="popup juice">
-
-                                        <div class="content">
-                                          <span class="close">&times;</span>
-                                          <p>Frappuccino is delicious</p>
-                                        </div>
-                                        </div>
-                        </ul>
-                        <ul class="list">
-                                <li class="top_price">60 kr</li>
-                                <li class="top_price">39 kr</li>
-                                <li class="top_price">40 kr</li>
-                                <li class="top_price">55 kr</li>
-                                <li class="top_price">45 kr</li>
-                                <li class="top_price">60 kr</li>
-                        </ul>
-                        <h1 class="underline">WARM BREW</h1>
-                        <ul class="list" id="low_list">
-                                <li><button id="hot-chocolate" class="click_btn">Hot Chocolate</button></li>
-                                <div class="popup hot-chocolate">
-
-                                        <div class="content">
-                                          <span class="close">&times;</span>
-                                          <p>Frappuccino is delicious</p>
-                                        </div>
-                                        </div>
-                                <li><button id="espresso" class="click_btn">Espresso</button></li>
-                                <div class="popup espresso">
-
-                                        <div class="content">
-                                          <span class="close">&times;</span>
-                                          <p>Frappuccino is delicious</p>
-                                        </div>
-                                        </div>
-                                <li><button id="milk-tea" class="click_btn">Milk Tea</button></li>
-                                <div class="popup milk-tea">
-
-                                        <div class="content">
-                                          <span class="close">&times;</span>
-                                          <p>Frappuccino is delicious</p>
-                                        </div>
-                                        </div>
-                                <li><button id="strawberry-tea" class="click_btn">Strawberry Tea</button></li>
-                                <div class="popup strawberry-tea">
-
-                                        <div class="content">
-                                          <span class="close">&times;</span>
-                                          <p>Frappuccino is delicious</p>
-                                        </div>
-
-                                      </div>
-                                <li><button id="cortado" class="click_btn">Cortado</button></li>
-                                <div class="popup cortado">
-
-                                        <div class="content">
-                                          <span class="close">&times;</span>
-                                          <p>Frappuccino is delicious</p>
-                                        </div>
-
-                                      </div>
-                                <li><button id="latte" class="click_btn">Latte</button></li>
-                                <div class="popup latte">
-
-                                        <div class="content">
-                                          <span class="close">&times;</span>
-                                          <p>Frappuccino is delicious</p>
-                                        </div>
-
-                                      </div>
-                                <li><button id="doble-espresso" class="click_btn">Doble Espresso</button></li>
-                                <div class="popup doble-espresso">
-
-                                        <div class="content">
-                                          <span class="close">&times;</span>
-                                          <p>Frappuccino is delicious</p>
-                                        </div>
-
-                                      </div>
-                        </ul>
-                        <ul class="list">
-                                <li class="low_price">59 kr</li>
-                                <li class="low_price">49 kr</li>
-                                <li class="low_price">45 kr</li>
-                                <li class="low_price">45 kr</li>
-                                <li class="low_price">60 kr</li>
-                                <li class="low_price">57 kr</li>
-                                <li class="low_price">47 kr</li>
-                        </ul>
-                </div>
-                    <img src="media/coffee.jpg" id="coffee">
-                    <div class="box">
-                            <h1 class="headline">DISHES</h1>
-                                <ul class="list" id="top_list1">
-
-                                        <li><button id="kyllingpasta" class="click_btn">Kylling pasta</button></li>
-                                        <div class="popup2 kyllingpasta">
-
-                                                <div class="content">
-                                                  <span class="close">&times;</span>
-                                                  <p>Frappuccino is delicious</p>
-                                                </div>
-
-                                              </div>
-
-
-                                        <li><button id="kyllingsandwich" class="click_btn">Kyllingsandwich</button></li>
-
-                                        <div class="popup2 kyllingsandwich">
-
-                                                <div class="content">
-                                                  <span class="close">&times;</span>
-                                                  <p>Frappuccino is delicious</p>
-                                                </div>
-
-                                              </div>
-    
-                                        <li><button id="panini" class="click_btn">Panini</button></li>
-                                        <div class="popup2 panini">
-    
-                                                <div class="content">
-                                                  <span class="close">&times;</span>
-                                                  <p>Frappuccino is delicious</p>
-                                                </div>
-                                              </div>
-
-                                        <li><button id="kyllingsalat" class="click_btn">Kyllingsalat</button></li>
-                                        <div class="popup2 kyllingsalat">
-
-                                                <div class="content">
-                                                  <span class="close">&times;</span>
-                                                  <p>Frappuccino is delicious</p>
-                                                </div>
-
-                                              </div>
-                                        <li><button id="pasta-carbonara" class="click_btn">Pasta Carbonara</button></li>
-                                        <div class="popup2 pasta-carbonara">
-
-                                                <div class="content">
-                                                  <span class="close">&times;</span>
-                                                  <p>Frappuccino is delicious</p>
-                                                </div>
-
-                                              </div>
-                                        <li><button id="tacobaguette" class="click_btn">Tacobaguette</button></li>
-                                        <div class="popup2 tacobaguette">
-
-                                                <div class="content">
-                                                  <span class="close">&times;</span>
-                                                  <p>Frappuccino is delicious</p>
-                                                </div>
-
-                                              </div>
-                                </ul>
-                                <ul class="list">
-                                        <li class="top_price">60 kr</li>
-                                        <li class="top_price">39 kr</li>
-                                        <li class="top_price">40 kr</li>
-                                        <li class="top_price">55 kr</li>
-                                        <li class="top_price">45 kr</li>
-                                        <li class="top_price">60 kr</li>
-                                </ul>
-                                <h1 class="underline">DESSERTS</h1>
-
-                                <ul class="list" id="right_lists">
-                                        <li><button id="brownies"class="click_btn">Brownies</button></li>
-                                        <div class="popup2 brownies">
-
-                                                <div class="content">
-                                                  <span class="close">&times;</span>
-                                                  <p>Frappuccino is delicious</p>
-                                                </div>
-
-                                              </div>
-                                        <li><button id="kuleis"class="click_btn">Kuleis</button></li>
-                                        <div class="popup2 kuleis">
-
-                                                <div class="content">
-                                                  <span class="close">&times;</span>
-                                                  <p>Frappuccino is delicious</p>
-                                                </div>
-
-                                              </div>
-                                        <li><button id="softis"class="click_btn">Softismix</button></li>
-                                        <div class="popup2 softis">
-
-                                                <div class="content">
-                                                  <span class="close">&times;</span>
-                                                  <p>Frappuccino is delicious</p>
-                                                </div>
-
-                                              </div>
-                                        <li><button id="pai"class="click_btn">Eplepai</button></li>
-                                        <div class="popup2 pai">
-
-                                                <div class="content">
-                                                  <span class="close">&times;</span>
-                                                  <p>Frappuccino is delicious</p>
-                                                </div>
-
-                                              </div>
-                                        <li><button id="terte"class="click_btn">Sitronterte</button></li>
-                                        <div class="popup2 terte">
-
-                                                <div class="content">
-                                                  <span class="close">&times;</span>
-                                                  <p>Frappuccino is delicious</p>
-                                                </div>
-
-                                              </div>
-                                        
-                                              <li><button id="oreokake"class="click_btn">Oreokake</button></li>
-                                        <div class="popup2 oreokake">
-                                                <div class="content">
-                                                  <span class="close">&times;</span>
-                                                  <p>Frappuccino is delicious</p>
-                                                </div>
-
-                                              </div>
-                                        <li><button id="valnøttkake"class="click_btn">Valnøtttkake</button></li>
-                                            <div class="popup2 valnøttkake">
-    
-                                                <div class="content">
-                                                  <span class="close">&times;</span>
-                                                  <p>Frappuccino is delicious</p>
-                                                </div>
-                                            </div>
-                                </ul>
-                                <ul class="list">
-                                        <li class="low_price">45 kr</li>
-                                        <li class="low_price">60 kr</li>
-                                        <li class="low_price">57 kr</li>
-                                        <li class="low_price">47 kr</li>
-                                        <li class="low_price">47 kr</li>
-                                        <li class="low_price">47 kr</li>
-                                        <li class="low_price">47 kr</li>
-                                </ul>
-                        </div>
-            </article>
-		<script src="./javascript/menu.js" charset="utf-8"></script>
-		<script src="./javascript/footer.js" charset="utf-8"></script>
-	</body>
 </html>
