@@ -48,3 +48,79 @@ header_container.appendChild(contact_us_button);
 header_wrapper.appendChild(header_container);
 header.appendChild(header_container);
 document.body.appendChild(header);
+
+//Mobilversjon header, some of this is taken from w3schools
+//https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_sidenav
+
+const openNav = () => {
+  document.getElementById("mySidenav").style.width = "45%";
+};
+
+const closeNav = () => {
+  document.getElementById("mySidenav").style.width = "0";
+};
+
+let headerV2 = document.createElement("DIV");
+headerV2.id = "mobile_version_header";
+
+let openSideNav = document.createElement("SPAN");
+openSideNav.id = "sideNavOpen";
+openSideNav.setAttribute("onclick", "openNav()");
+openSideNav.innerHTML = "&#9776;";
+
+headerV2.appendChild(openSideNav);
+
+let home_button2 = document.createElement("IMG");
+home_button2.classList.add("home_button2");
+home_button2.setAttribute("src", "media/actual_logo.png");
+home_button2.setAttribute("alt", "logo");
+home_button2.classList.add("image");
+home_button2.setAttribute("onclick", "window.location.href='homepage.html'");
+
+headerV2.appendChild(home_button2);
+document.body.appendChild(headerV2);
+
+let mobileHeader = document.createElement("HEADER");
+mobileHeader.classList.add("mobileHeader");
+
+let sideNavDiv = document.createElement("DIV");
+sideNavDiv.classList.add("sidenav");
+sideNavDiv.id = "mySidenav";
+
+let sideNav_container = document.createElement("DIV");
+
+let closeBtn = document.createElement("a");
+closeBtn.setAttribute("href", "javacript:void(0)");
+closeBtn.classList.add("closebtn");
+closeBtn.setAttribute("onclick", "closeNav()");
+closeBtn.innerHTML = "&times;";
+
+let home = document.createElement("a");
+home.innerHTML = "HOME";
+home.setAttribute("onclick", "window.location.href='homepage.html'");
+
+let menu = document.createElement("a");
+menu.innerHTML = "MENU";
+menu.setAttribute("onclick", "window.location.href='menu.html'");
+
+let daily_offers = document.createElement("a");
+daily_offers.innerHTML = "DAILY OFFERS";
+daily_offers.setAttribute("onclick", "window.location.href='daily_offer.html'");
+
+let reviews = document.createElement("a");
+reviews.innerHTML = "REVIEWS";
+reviews.setAttribute("onclick", "window.location.href='reviews.html'");
+
+let contact_us = document.createElement("a");
+contact_us.innerHTML = "CONTACT US";
+contact_us.setAttribute("onclick", "window.location.href='contact_us.html'");
+
+sideNav_container.appendChild(closeBtn);
+sideNav_container.appendChild(home);
+sideNav_container.appendChild(menu);
+sideNav_container.appendChild(daily_offers);
+sideNav_container.appendChild(reviews);
+sideNav_container.appendChild(contact_us);
+sideNavDiv.appendChild(sideNav_container);
+mobileHeader.appendChild(sideNavDiv);
+document.body.appendChild(mobileHeader);
