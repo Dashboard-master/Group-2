@@ -1,5 +1,6 @@
 #homepageContainer {
   margin: 50px;
+  margin-top: 8%;
   display: flex;
   flex-wrap: wrap;
   position: relative;
