@@ -9,7 +9,7 @@ let footer_column2 = document.createElement("TD");
 footer_column1.innerText = "thanksalatte@business.com";
 footer_column1.style = "border-right: 2px solid #FFFAF3; padding-right: 15px;";
 
-footer_column2.innerText = "Tinghusplassen 24, 7013 Trondheim";
+footer_column2.innerHTML = "Tinghusplassen 24, 7013 Trondheim";
 footer_column2.style = "border-left: 2px solid #FFFAF3; padding-left: 15px;";
 
 footer_row.appendChild(footer_column1);
