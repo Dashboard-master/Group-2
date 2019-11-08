@@ -50,12 +50,15 @@ label {
   height: 2.5em;
   margin-bottom: -70px;
   margin-top: 100px;
+
 }
 
 #footer_table {
   border-collapse: collapse;
   max-width: max-content;
-  margin: auto;
   color: #fffaf3;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
 }
- 	
