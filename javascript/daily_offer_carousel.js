@@ -21,8 +21,6 @@ function next_offer() {
 	else {
 		append_offers(current_index + 3, "offer hidden_offer_right")
 	}
-
-
 	offer_list[0].parentNode.removeChild(offer_list[0])
 	offer_list = document.querySelectorAll(".offer")
 	last_day_index = 3 - 1 //3 since current is always in position 3, -1 becuause we removed the first element in the array
