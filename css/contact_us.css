@@ -2,11 +2,12 @@
   width: 430px;
 }
 
-
 .flexbox-container {
   display: flex;
   width: 1024px;
   margin: 130px auto;
+  margin-top: 140px;
+  height: auto;
   min-height: 80vh;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -143,7 +144,7 @@
 
 @media only screen and (max-width: 750px) {
   .flexbox-container {
-    margin-top: 70px;
+    margin-top: 30%;
   }
 
   .flexbox-3 {

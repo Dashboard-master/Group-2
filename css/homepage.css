@@ -1,6 +1,6 @@
 #homepageContainer {
   margin: 50px;
-  margin-top: 40px;
+  margin-top: 5%;
   display: flex;
   flex-wrap: wrap;
   position: relative;
@@ -26,11 +26,11 @@
   float: left;
 }
 
-#aboutUs>h2 {
+#aboutUs > h2 {
   color: #614035;
 }
 
-#aboutInfo>p {
+#aboutInfo > p {
   float: left;
   width: 290px;
   height: 100%;
@@ -51,12 +51,12 @@
   width: 220px;
 }
 
-#aboutImage>img {
+#aboutImage > img {
   max-width: 100%;
   max-height: 100%;
 }
 
-#aboutImage2>img {
+#aboutImage2 > img {
   max-width: 100%;
   max-height: 100%;
 }
@@ -78,7 +78,7 @@
   text-align: center;
 }
 
-#openingTitle>h3 {
+#openingTitle > h3 {
   margin: 0px;
   color: #ffffff;
   font-size: 25px;
@@ -92,7 +92,7 @@
   margin: 0px;
 }
 
-#openingTimes>p {
+#openingTimes > p {
   color: white;
   font-size: 13px;
 }
@@ -106,12 +106,12 @@
   background-color: rgba(255, 250, 243, 0.86);
 }
 
-#homepageDaily>h1 {
+#homepageDaily > h1 {
   line-height: 1em;
   margin: 10px;
 }
 
-#homepageDaily>h2 {
+#homepageDaily > h2 {
   font-family: Andale Mono, AndaleMono, monospace, arial;
   color: #602121;
   padding: 0px;
@@ -119,7 +119,7 @@
   line-height: 1em;
 }
 
-#homepageDaily>p {
+#homepageDaily > p {
   width: 150px;
   font-family: Andale Mono, AndaleMono, monospace, arial;
   font-size: small;
@@ -135,14 +135,14 @@
   text-align: center;
 }
 
-#homepageDaily>img {
+#homepageDaily > img {
   float: right;
   max-width: 50%;
   padding: 5px;
   margin-top: 10px;
 }
 
-#homepageDaily>#price {
+#homepageDaily > #price {
   float: left;
   font-size: 35px;
   padding-left: 15px;
@@ -152,11 +152,11 @@
   font-weight: bold;
 }
 
-#homepageDaily>#menuLink {
+#homepageDaily > #menuLink {
   float: right;
 }
 
-#homepageDaily>#menuLink>img {
+#homepageDaily > #menuLink > img {
   height: 60px;
   width: 120px;
   margin-top: 10px;
@@ -164,7 +164,7 @@
   filter: drop-shadow(5px 5px 5px rgba(51, 41, 39, 0.637));
 }
 
-#homepageDaily>#menuLink>img:hover {
+#homepageDaily > #menuLink > img:hover {
   height: 65px;
   width: 125px;
 }
@@ -223,7 +223,7 @@
     width: 100%;
   }
 
-  #aboutInfo>p {
+  #aboutInfo > p {
     width: 100%;
   }
 
@@ -254,7 +254,7 @@
     width: 95%;
   }
 
-  #homepageDaily>h2 {
+  #homepageDaily > h2 {
     font-size: 20px;
     text-align: left;
     margin-left: 10px;
