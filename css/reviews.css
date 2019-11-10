@@ -1,12 +1,12 @@
 #page_container {
   width: 100%;
+  min-height: 80vh;
   padding-left: 10%;
   padding-right: 10%;
   margin: 0 auto;
-  margin-top: 17%;
+  margin-top: 175px;
   display: flex;
   flex-direction: row;
-  margin-bottom: 10%;
 }
 
 #all_reviews_container {
