@@ -2,12 +2,13 @@
   width: 430px;
 }
 
-
 .flexbox-container {
   display: flex;
   width: 1024px;
   margin: 130px auto;
+  margin-top: 140px;
   height: auto;
+  min-height: 80vh;
   flex-wrap: wrap;
   justify-content: space-around;
   position: relative;
@@ -18,7 +19,7 @@
   font-size: 12pt;
   width: 870px;
   padding: 0px 20px;
-  margin: 50px 10px 10px 10px;
+  margin: 10px;
   border: 4px solid #614035;
   display: inline-flex;
   flex-direction: column;
@@ -123,7 +124,7 @@
   .flexbox-1 {
     width: 100%;
     margin: 10px auto;
-    margin-top: 50px;
+    margin-top: 10px;
   }
 
   .flexbox-2 {
@@ -143,7 +144,7 @@
 
 @media only screen and (max-width: 750px) {
   .flexbox-container {
-    margin-top: 20%;
+    margin-top: 30%;
   }
 
   .flexbox-3 {

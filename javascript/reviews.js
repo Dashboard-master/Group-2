@@ -57,7 +57,7 @@ document.getElementById("new_review").addEventListener(
   (addReview = () => {
     if (
       document.getElementById("user_text_review").value == "" ||
-      document.getElementById("user_name").value == "" ||
+      document.getElementById("name").value == "" ||
       document.getElementById("user_email").value == ""
     ) {
       alert("Please fill in all necessary fields.");
@@ -66,7 +66,7 @@ document.getElementById("new_review").addEventListener(
       user_review_container.id = "userReview";
 
       let user_name = document.createElement("P");
-      let user_name_input = document.getElementById("user_name").value;
+      let user_name_input = document.getElementById("name").value;
       user_name.innerHTML = user_name_input;
 
       let user_star_rating = document.createElement("DIV");
@@ -155,6 +155,6 @@ const calculateRating = () => {
 const clearFields = () => {
   hoverStars();
   document.getElementById("user_text_review").value = "";
-  document.getElementById("user_name").value = "";
+  document.getElementById("name").value = "";
   document.getElementById("user_email").value = "";
 };

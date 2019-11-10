@@ -1,12 +1,12 @@
 #page_container {
   width: 100%;
+  min-height: 80vh;
   padding-left: 10%;
   padding-right: 10%;
   margin: 0 auto;
-  margin-top: 17%;
+  margin-top: 13%;
   display: flex;
   flex-direction: row;
-  margin-bottom: 10%;
 }
 
 #all_reviews_container {
@@ -109,11 +109,13 @@ textarea {
 input[type="email"] {
   width: 70%;
   margin-bottom: 10px;
+  border-left-width: 3px;
 }
 
 input[type="text"] {
   width: 40%;
   margin-bottom: 10px;
+  border-left-width: 3px;
 }
 
 input[type="submit"] {
@@ -132,6 +134,19 @@ input[type="submit"] {
   font-family: alike angular;
   font-weight: 900;
   border: 1.5px solid #473729;
+}
+
+#user_text_review {
+  border-left-width: 3px;
+}
+
+input:required:invalid,
+#user_text_review:required:invalid {
+  border-left-color: palevioletred;
+}
+input:required:valid,
+#user_text_review:required:valid {
+  border-left-color: palegreen;
 }
 
 input[type="submit"]:hover {
@@ -193,7 +208,7 @@ span {
 /*Makes the page responsive once the width is below what was defined, (1024px)*/
 @media only screen and (max-width: 1023px) {
   #page_container {
-    margin-top: 13%;
+    margin-top: 137px;
     flex-flow: column-reverse;
     height: 100%;
   }
@@ -216,7 +231,7 @@ span {
 /*Makes the page responsive on a mobile device.*/
 @media only screen and (max-width: 750px) {
   #page_container {
-    margin-top: 25%;
+    margin-top: 30%;
     margin-left: -7%;
   }
 

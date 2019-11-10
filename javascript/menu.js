@@ -152,7 +152,7 @@ let dishes = [{
     price: "45,-"
   },
   {
-    title: "Grilled Asparagus and Shitake Tacos",
+    title: "Grilled Asparagus & Shitake Tacos",
     text: `Fully loaded, fully vegan — and all the guac you could ever dream of.
 `,
     img: {
@@ -238,7 +238,7 @@ let desserts = [{
     price: "50,-"
   },
   {
-    title: "Double Chocolate Zucchini Bread",
+    title: "Chocolate Zucchini Bread",
     text: `You won't have to twist anyone's arm to eat veggies for breakfast when it looks like this.
 `,
     img: {
