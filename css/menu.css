@@ -130,19 +130,6 @@
     color: lightcoral;
 }
 
-.close:hover,
-.close:focus,
-.click_btn:hover,
-.click_btn:focus {
-    color: white;
-    cursor: pointer;
-}
-
-.top_price,
-.low_price {
-    padding-left: 11em;
-}
-
 .menu_items>ul {
     list-style: none;
     display: flex;
@@ -157,9 +144,11 @@
     text-decoration: underline;
 }
 
-.name:hover {
+.name:hover,
+.close:hover,
+.close:focus {
     cursor: pointer;
-    color: #614035;
+    color: whitesmoke;
 }
 
 @media only screen and (max-width: 1023px) {
