@@ -71,6 +71,7 @@ h2 {
 
 #give_review_container {
   padding-top: 10px;
+  min-width: 295px;
   width: 27%;
   margin-left: 50px;
   height: 100%;
