@@ -49,8 +49,8 @@ header_wrapper.appendChild(header_container);
 header.appendChild(header_container);
 document.body.appendChild(header);
 
-//Mobilversjon header, some of this is taken from w3schools
-//https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_sidenav
+//Header for the mobile version of the website, some of this is inspired by W3schools,
+//https://www.w3schools.com/howto/howto_js_sidenav.asp
 
 const openNav = () => {
   document.getElementById("mySidenav").style.width = "45%";

@@ -3,7 +3,7 @@
   padding-left: 10%;
   padding-right: 10%;
   margin: 0 auto;
-  margin-top: 17%;
+  margin-top: 13%;
   display: flex;
   flex-direction: row;
   margin-bottom: 10%;
@@ -231,7 +231,7 @@ span {
 /*Makes the page responsive on a mobile device.*/
 @media only screen and (max-width: 750px) {
   #page_container {
-    margin-top: 25%;
+    margin-top: 15%;
     margin-left: -7%;
   }
 

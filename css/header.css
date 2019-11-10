@@ -5,7 +5,9 @@
   display: flex;
   justify-content: center;
   height: 20vh;
-  background-image: url("../media/header_bg.jpg");
+  background-image: url("../media/header_bg.jpg"),
+    linear-gradient(rgba(27, 17, 17, 0.26), rgba(27, 17, 17, 0.473));
+  background-blend-mode: overlay;
   border-bottom: 1px solid #614035;
   background-size: 100% 130%;
 }
@@ -39,6 +41,7 @@
   align-self: flex-end;
   cursor: pointer;
   filter: drop-shadow(3px 0px 2px rgba(51, 41, 39, 0.637));
+  outline: none;
 }
 
 .menu_button {
@@ -85,7 +88,10 @@
   background-color: rgba(167, 111, 92, 0.9);
 }
 
-/*MOBIL CSS*/
+/*MOBILE CSS
+/*Some of this code is insipred from W3schools,
+https://www.w3schools.com/howto/howto_js_sidenav.asp
+*/
 
 #mobile_version_header {
   display: none;
@@ -101,6 +107,7 @@
   background-color: rgb(148, 99, 83);
   height: 112px;
   border-right: 1px solid #614035;
+  cursor: pointer;
 }
 
 .home_button2 {
