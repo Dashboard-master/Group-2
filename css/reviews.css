@@ -208,7 +208,7 @@ span {
 /*Makes the page responsive once the width is below what was defined, (1024px)*/
 @media only screen and (max-width: 1023px) {
   #page_container {
-    margin-top: 13%;
+    margin-top: 137px;
     flex-flow: column-reverse;
     height: 100%;
   }
