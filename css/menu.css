@@ -149,6 +149,7 @@
 .close:focus {
     cursor: pointer;
     color: lightcoral;
+    font-style: italic;
 }
 
 @media only screen and (max-width: 1023px) {
