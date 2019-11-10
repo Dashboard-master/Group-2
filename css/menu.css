@@ -4,7 +4,7 @@
     flex-direction: row;
     justify-content: center;
     color: black;
-    margin-top: 200px;
+    margin-top: 137px;
     margin-bottom: 200px;
 }
 
@@ -155,7 +155,7 @@
     #all {
         width: 80%;
         margin: 0 auto;
-        margin-top: 25%;
+        margin-top: 13%;
     }
 
     .box {
@@ -178,7 +178,7 @@
         flex-direction: column;
         width: 85%;
         margin: 0 auto;
-        margin-top: 25%;
+        margin-top: 14%;
     }
 
     .box {

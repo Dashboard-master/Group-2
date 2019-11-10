@@ -1,6 +1,6 @@
 #homepageContainer {
   margin: 50px;
-  margin-top: 8%;
+  margin-top: 3%;
   display: flex;
   flex-wrap: wrap;
   position: relative;
@@ -178,7 +178,7 @@
     flex-direction: column;
     width: 100%;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 3%;
   }
 
   #aboutUs {
