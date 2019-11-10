@@ -181,7 +181,7 @@ That's why I think it is a good solution to increase the max-width to 950px*/
     flex-direction: column;
     width: 85%;
     margin: 0 auto;
-    margin-top: 15%;
+    margin-top: 30%;
   }
 
   .box {
