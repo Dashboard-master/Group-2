@@ -148,7 +148,7 @@
 .close:hover,
 .close:focus {
     cursor: pointer;
-    color: whitesmoke;
+    color: lightcoral;
 }
 
 @media only screen and (max-width: 1023px) {
@@ -173,7 +173,7 @@
     }
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 950px) {
     #all {
         flex-direction: column;
         width: 85%;
