@@ -109,11 +109,13 @@ textarea {
 input[type="email"] {
   width: 70%;
   margin-bottom: 10px;
+  border-left-width: 3px;
 }
 
 input[type="text"] {
   width: 40%;
   margin-bottom: 10px;
+  border-left-width: 3px;
 }
 
 input[type="submit"] {
@@ -132,6 +134,19 @@ input[type="submit"] {
   font-family: alike angular;
   font-weight: 900;
   border: 1.5px solid #473729;
+}
+
+#user_text_review {
+  border-left-width: 3px;
+}
+
+input:required:invalid,
+#user_text_review:required:invalid {
+  border-left-color: palevioletred;
+}
+input:required:valid,
+#user_text_review:required:valid {
+  border-left-color: palegreen;
 }
 
 input[type="submit"]:hover {
