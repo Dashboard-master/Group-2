@@ -1,6 +1,5 @@
-let coldBrews = [
-  {
-    title: "Vegan Pumpkin Cream Cold Brew",
+let coldBrews = [{
+    title: "Vegan Pumpkin Cream",
     text: `Pumpkin Cream Cold Brew, vegan style. No need to drive to Starbucks,
     shell out cash, and beg for substitutions. Stay here, get caffeinated,
     get cozy, stay happy.
@@ -12,7 +11,7 @@ let coldBrews = [
     price: "40,-"
   },
   {
-    title: "Almond Milk Cold Brew Coffee Latte",
+    title: "Almond Milk Coffee Latte",
     text: `Almond milk latte made with homemade cold brew iced cubes…
     because no one wants a watery coffee drink once the ice melts.
   `,
@@ -66,8 +65,7 @@ let coldBrews = [
   }
 ];
 
-let warmBrews = [
-  {
+let warmBrews = [{
     title: "Vegan Hot Chocolate",
     text: `Rich and creamy homemade vegan hot chocolate is the perfect way to
     warm you up from the cold of winter!
@@ -132,8 +130,7 @@ let warmBrews = [
   }
 ];
 
-let dishes = [
-  {
+let dishes = [{
     title: "Pesto Pasta",
     text: `Switch to a Parmesan-free vegan pesto sauce (this one is our favorite!)
     for a pasta dish everyone can enjoy.
@@ -197,8 +194,7 @@ let dishes = [
   }
 ];
 
-let desserts = [
-  {
+let desserts = [{
     title: "Chocolate Mendiants",
     text: `Melted chocolate topped with anything your heart desires.
     Baked with dairy-free chocolate and they're a 100% vegan treat.`,
@@ -265,7 +261,7 @@ let desserts = [
 
 let close_container = document.querySelector(".close_popup");
 close_container.addEventListener("click", () => {
-	closePopup()
+  closePopup()
 })
 
 function closePopup() {
