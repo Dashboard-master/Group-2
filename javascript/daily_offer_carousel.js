@@ -177,21 +177,13 @@ function append_all_offers (){
 			append_offers(index, "offer hidden_offer_right")
 		}
 	}
+	update_image_buttons()
 }
 append_all_offers()
 
 let offer_list = document.querySelectorAll(".offer")
 let end_index = offer_list.length - 1
-// linjen under fungerer ikke skikkelig
-//offer_list[current_index].querySelector("h2").innerText = 'Today:'
 
-/*
-window.onload = () => {
-	offer_list[current_index - 1].classList = "offer preview_offer_left"
-	offer_list[current_index + 1].classList = "offer preview_offer_right"
-	update_image_buttons()
-}
-*/
 window.onkeydown = (e) => {
 	if (e.keyCode == 37){
 		previous_offer()
