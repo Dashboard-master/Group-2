@@ -4,7 +4,7 @@
     flex-direction: row;
     justify-content: center;
     color: black;
-    margin-top: 200px;
+    margin-top: 137px;
 	min-height: 80vh;
 }
 
@@ -156,7 +156,7 @@
     #all {
         width: 80%;
         margin: 0 auto;
-        margin-top: 13%;
+        margin-top: 137px;
     }
 
     .box {
@@ -181,7 +181,7 @@ That's why I think it is a good solution to increase the max-width to 950px*/
         flex-direction: column;
         width: 85%;
         margin: 0 auto;
-        margin-top: 14%;
+        margin-top: 137px;
     }
 
     .box {

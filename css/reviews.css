@@ -4,7 +4,7 @@
   padding-left: 10%;
   padding-right: 10%;
   margin: 0 auto;
-  margin-top: 175px;
+  margin-top: 137px;
   display: flex;
   flex-direction: row;
 }
@@ -208,7 +208,7 @@ span {
 /*Makes the page responsive once the width is below what was defined, (1024px)*/
 @media only screen and (max-width: 1023px) {
   #page_container {
-    margin-top: 13%;
+    margin-top: 137px;
     flex-flow: column-reverse;
     height: 100%;
   }
@@ -231,7 +231,7 @@ span {
 /*Makes the page responsive on a mobile device.*/
 @media only screen and (max-width: 750px) {
   #page_container {
-    margin-top: 14%;
+    margin-top: 100px;
     margin-left: -7%;
   }
 
