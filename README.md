@@ -5,3 +5,4 @@ https://folk.ntnu.no/andschj/IT2805/Thanks-A-Latte/homepage.html
 
 Very nice page
 So nice
+Dat best
